@@ -1,7 +1,11 @@
+.body{
+  width: 100%;
+  height: auto;
+}
+
 // ヘッダー
 .header{ 
-  width: auto;
-  height: 100px;
+  width: 100%;
 
   // スクロール中にヘッダーが移動する
   postion: -webkit-sticky;
@@ -10,31 +14,27 @@
 
   background:rgba(0,0,0,0);
 
-  &＿_Title{
-  }
-  &__Menu{
-    &__Menu_word{
-      display: inline-block;
+  &Title{
+    color: black;
+
+    &Menu{
+      font-size: 20px;
+      list-style: none;
     }
   }
 }
 
-.news{
-  width: 1440px;
-  height: 880px;
-  background: #5B5B5B;
-}
-
-.portfolio{
-  width: 1440px;
-  height: 880px;
-  background: #919191;
-}
-
-.blog{
-  width: 1440px;
-  height: 880px;
-  background: #BCBCBC;
+.main{
+  &Title{
+    width: 1440px;
+    height: 880px;
+    background: #000000;
+  
+  }
+    &Title_Word{
+      font-size: 20px;
+      text-align: center;
+    }
 }
 
 .footer{
@@ -42,10 +42,34 @@
   height: auto;
   background-color: #000000;
 
-  &__Title{
-
+  &Title{
+    font-size: 60px;
+    padding: 60px 0 130px 120px;
+    color: rgba(255, 255, 255, 0.3);
   }
-  &__Menu{
-
+  &Menu{
+    font-size: 20px;
+    color: #BCBCBC;
+    margin-bottom: 20px;
+    border-bottom: 2px #BCBCBC solid;
   }
 }
+
+
+// .news{
+//   width: 1440px;
+//   height: 880px;
+//   background: #5B5B5B;
+// }
+
+// .portfolio{
+//   width: 1440px;
+//   height: 880px;
+//   background: #919191;
+// }
+
+// .blog{
+//   width: 1440px;
+//   height: 880px;
+//   background: #BCBCBC;
+// }

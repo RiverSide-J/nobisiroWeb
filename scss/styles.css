@@ -1,6 +1,10 @@
+.body {
+  width: 100%;
+  height: auto;
+}
+
 .header {
-  width: auto;
-  height: 100px;
+  width: 100%;
   postion: -webkit-sticky;
   position: -webkit-sticky;
   position: sticky;
@@ -8,31 +12,42 @@
   background: rgba(0, 0, 0, 0);
 }
 
-.header__Menu__Menu_word {
-  display: inline-block;
+.headerTitle {
+  color: black;
 }
 
-.news {
-  width: 1440px;
-  height: 880px;
-  background: #5B5B5B;
+.headerTitleMenu {
+  font-size: 20px;
+  list-style: none;
 }
 
-.portfolio {
+.mainTitle {
   width: 1440px;
   height: 880px;
-  background: #919191;
+  background: #000000;
 }
 
-.blog {
-  width: 1440px;
-  height: 880px;
-  background: #BCBCBC;
+.mainTitle_Word {
+  font-size: 20px;
+  text-align: center;
 }
 
 .footer {
   width: 100%;
   height: auto;
   background-color: #000000;
+}
+
+.footerTitle {
+  font-size: 60px;
+  padding: 60px 0 130px 120px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footerMenu {
+  font-size: 20px;
+  color: #BCBCBC;
+  margin-bottom: 20px;
+  border-bottom: 2px #BCBCBC solid;
 }
 /*# sourceMappingURL=styles.css.map */
