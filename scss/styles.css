@@ -1,11 +1,16 @@
 .body {
   background: #000000;
+  height: 2000px;
 }
 
 .header {
   background: #919191;
   width: 100%;
   height: auto;
+  postion: -webkit-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .footer {
