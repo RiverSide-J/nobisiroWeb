@@ -1,26 +1,12 @@
-// ヘッダー
-.header{ 
+.header {
   background: #919191;
   width: 100%;
   height: auto;
-
-  &＿_title{
-
-  }
-  &__Menu{
-
-  }
 }
 
-.footer{
+.footer {
   background: #919191;
   width: 100%;
   height: auto;
-
-  &__Title{
-
-  }
-  &__Menu{
-
-  }
 }
+/*# sourceMappingURL=styles.css.map */
