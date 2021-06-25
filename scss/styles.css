@@ -1,19 +1,15 @@
-.body {
-  width: 100%;
-}
-
 .header {
-  width: 1440px;
-  height: 880px;
+  width: auto;
+  height: 100px;
   postion: -webkit-sticky;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #000000;
+  background: rgba(0, 0, 0, 0);
 }
 
-.header__Menu__word {
-  font-size: 20px;
+.header__Menu__Menu_word {
+  display: inline-block;
 }
 
 .news {
