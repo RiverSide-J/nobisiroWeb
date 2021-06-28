@@ -1,9 +1,6 @@
 // ヘッダー
 .header{ 
-  width: 100%;
-
   // スクロール中にヘッダーが移動する
-  postion: -webkit-sticky;
   position: sticky;
   top: 0;
 
@@ -12,26 +9,28 @@
 
   &Title{
     color: black;
+    font-size: 20px;
 
     &Menu{
       font-size: 20px;
       list-style: none;
+      &_item{
+      }
     }
   }
 }
 
 .main{
-  background: #d1aeae;
-  &__Wrap{
-    &Title{
-      width: 1440px;
-      height: 880px;
-    
+  width: 100%;
+  height: 400px;
+  background: #000000;
+
+  &Wrap{
+    &Button{
+      // color: white;
+      border: none;
+      background-color: none;
     }
-      &Word{
-        font-size: 20px;
-        text-align: center;
-      }
   }
 }
 
@@ -87,7 +86,7 @@
 .headerSecondary{
   font-size: 15px;
 }
-.headerprimary{
+.headerPrimary{
   font-size: 20px;
 }
 
