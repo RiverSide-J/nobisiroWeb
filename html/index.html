@@ -10,7 +10,7 @@
     <!-- タイトル -->
     <title>SITE_TITLE</title>
   </head>
-
+  
   <body class="body">
     <!-- ヘッダー -->
     <header class="header">
@@ -52,65 +52,53 @@
     </header>
 
     <main class="main">
-      <section>
+      <section class="mainWrap">
         <!-- タイトル下の文章 -->
         <title class="mainTitle">
-          <div class="mainTitle_Word">
-            ファーストビュー画像
-            （ここにお好きな画像を入れてください
-            テキストが白色でも見やすいもの）
-          </div>
-          scroll
-          ↓
+            <div class="mainWord">
+              ファーストビュー画像
+              （ここにお好きな画像を入れてください
+              テキストが白色でも見やすいもの）
+            </div>
+            scrolßl
+            ↓
         </title>
       </section>
     </main>
 
-    <!-- フッター -->
-    <footer class="footer">
-      <h4 class="footerTitle">SITE_TITLE</h4>
-      
-      <p class="footerMenu">
-        <a href="">お知らせ</a>
-        <a href="">実績</a>
-        <a href="">記事</a>
-      </p>
-      ©️ノビシロテック sample 2021
-    </footer>
-  </body>
-</html>
-
-
-<!-- <article class="news">
-      <h5>NEWS</h5>
-      <h3>お知らせ</h3>
+    <!-- ニュース -->
+    <section class="news">
+      <h5 class="primaryTitle">NEWS</h5>
+      <h3 class="secondaryTitle">お知らせ</h3>
 
       このセクションでは、お知らせをリストにして並べています。
-      <button>MORE</button>
+      <button class="button">MORE</button>
 
-      <section>
-        <h5>カテゴリー</h5>
-        <h5>2021/06/11</h5>
+      <section class="newsAnnounce">
+        <h5 class="">カテゴリー</h5>
+        <h5 class="">2021/06/11</h5>
         タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
       </section>
-    </article>
+    </section>
 
-    <article class="portfolio">
-      スライドショー 画像一個ずつ
-      <img src="" alt="">
-      サイト１
+    <!-- 実績 -->
+    <secition class="portfolio">
+      <h5 class="primaryTitle">PORTFOLIO</h5>
+      <h3 class="secondaryTitle">実績</h3>
+      <!-- スライドショー 画像一個ずつ
+      サイト１ -->
+      
 
-      <h5>PORTFOLIO</h5>
-      <h3>実績</h3>
       このセクションは、作成したポートフォリオのサイト一覧を並べています。
-      ボタン
-      <button>MORE</button>
-    </article>
+      サイト１
+      <button class="button">MORE</button>
+    </secition>
     
-    <article class="blog">
+    <!-- 記事 -->
+    <section class="blog">
       タイトル
-      <h5>BLOG</h5>
-      <h3>記事</h3>
+      <h5 class="primaryTitle">BLOG</h5>
+      <h3 class="secondaryTitle">記事</h3>
       このセクションでは、作成した記事一覧を表示しています。
 
       <div>
@@ -118,8 +106,26 @@
       </div> 
 
       スライドショー 画像三つ見えるやつ
-      <img src="" alt="">
       サイト１
       下のボタン
-       <button>MORE</button>
-    </article> -->
+       <button class="button">MORE</button>
+    </section>
+      
+    <!-- フッター -->
+    <footer class="footer">
+      <h4 class="footerMain">SITE_TITLE</h4>
+      
+      <p class="footerMenu">
+        <a href="">お知らせ</a>
+        <a href="">実績</a>
+        <a href="">記事</a>
+      </p>
+
+      <h1 class="footerSecondary">
+        ©️ノビシロテック sample 2021
+      </h1>
+    </footer>
+  </body>
+</html>
+
+
