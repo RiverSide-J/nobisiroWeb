@@ -1,23 +1,18 @@
 // ヘッダー
 .header{ 
   // スクロール中にヘッダーが移動する
-  position: sticky;
   top: 0;
+  position: sticky;
 
-  // 透明化
-  background:rgba(0,0,0,0);
-
-  &Title{
-    color: black;
-    font-size: 20px;
+    &Title{
+      font-size: 20px;
+    }
 
     &Menu{
       font-size: 20px;
       list-style: none;
-      &_item{
-      }
+      display: inline-flex;
     }
-  }
 }
 
 .main{
@@ -85,18 +80,24 @@
 // headerのタイトル関係
 .headerSecondary{
   font-size: 15px;
+    // 透明化
+    background-color:rgba(255,255,255,0.4);
 }
 .headerPrimary{
   font-size: 20px;
+    // 透明化
+    background-color:rgba(255,255,255,0.4);
 }
 
 
 // （primary/secondary)
 .titlePrimary{
   font-size: 20px;
+  color: white;
 }
 .titleSecondary{
   font-size: 30px;
+  color: white;
 }
 
 // ボタン関係

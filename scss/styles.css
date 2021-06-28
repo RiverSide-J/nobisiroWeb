@@ -1,18 +1,19 @@
 .header {
+  top: 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  background: rgba(0, 0, 0, 0);
 }
 
 .headerTitle {
-  color: black;
   font-size: 20px;
 }
 
-.headerTitleMenu {
+.headerMenu {
   font-size: 20px;
   list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .main {
@@ -77,18 +78,22 @@
 
 .headerSecondary {
   font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .headerPrimary {
   font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .titlePrimary {
   font-size: 20px;
+  color: white;
 }
 
 .titleSecondary {
   font-size: 30px;
+  color: white;
 }
 
 .button {
