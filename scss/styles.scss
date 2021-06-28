@@ -2,10 +2,12 @@
 .header{ 
   // スクロール中にヘッダーが移動する
   top: 0;
+  margin: 25px 35px;
   position: sticky;
 
     &Title{
-      font-size: 20px;
+      font-size: 17px;
+      font-weight: bold;
     }
 
     &Menu{
@@ -15,6 +17,34 @@
     }
 }
 
+// 共通クラス名一覧
+// 
+// headerのタイトル関係
+.headerPrimary{
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 35px;
+}
+
+.headerPortfolid{
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 17px;
+
+}
+
+.headerBlog{
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 32.5px;
+}
+.headerNews{
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 48px;
+}
+
+// メイン
 .main{
   width: 100%;
   height: 400px;
@@ -22,13 +52,13 @@
 
   &Wrap{
     &Button{
-      // color: white;
       border: none;
       background-color: none;
     }
   }
 }
 
+// ニュース
 .news{
   width: 100%;
   height: 400px;
@@ -41,18 +71,21 @@
     }
 }
 
+// 実績
 .portfolio{
   width: 100%;
   height: 200px;
   background: #919191;
 }
 
+// ブログ
 .blog{
   width: 100%;
   height: 500px;
   background: #BCBCBC;
 }
 
+// フッター
 .footer{
   width: 100%;
   height: auto;
@@ -77,27 +110,12 @@
 
 // 共通クラス名一覧
 // 
-// headerのタイトル関係
-.headerSecondary{
-  font-size: 15px;
-    // 透明化
-    background-color:rgba(255,255,255,0.4);
-}
-.headerPrimary{
-  font-size: 20px;
-    // 透明化
-    background-color:rgba(255,255,255,0.4);
-}
-
-
 // （primary/secondary)
 .titlePrimary{
   font-size: 20px;
-  color: white;
 }
 .titleSecondary{
   font-size: 30px;
-  color: white;
 }
 
 // ボタン関係

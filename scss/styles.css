@@ -1,11 +1,13 @@
 .header {
   top: 0;
+  margin: 25px 35px;
   position: -webkit-sticky;
   position: sticky;
 }
 
 .headerTitle {
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .headerMenu {
@@ -14,6 +16,30 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.headerPrimary {
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 35px;
+}
+
+.headerPortfolid {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 17px;
+}
+
+.headerBlog {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 32.5px;
+}
+
+.headerNews {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 48px;
 }
 
 .main {
@@ -76,24 +102,12 @@
   color: chartreuse;
 }
 
-.headerSecondary {
-  font-size: 15px;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.headerPrimary {
-  font-size: 20px;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
 .titlePrimary {
   font-size: 20px;
-  color: white;
 }
 
 .titleSecondary {
   font-size: 30px;
-  color: white;
 }
 
 .button {
