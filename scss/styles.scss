@@ -82,12 +82,21 @@
 }
 
 // 共通クラス名一覧
-// 各種タイトルの共通
-// （primary/secondary)
-.primaryTitle{
+// 
+// headerのタイトル関係
+.headerSecondary{
+  font-size: 15px;
+}
+.headerprimary{
   font-size: 20px;
 }
-.secondaryTitle{
+
+
+// （primary/secondary)
+.titlePrimary{
+  font-size: 20px;
+}
+.titleSecondary{
   font-size: 30px;
 }
 
@@ -98,7 +107,7 @@
   border-radius: 25px;
 }
 
-// タイトル下の文字
+// 説明文
 .info{
   font-size: 20px;
 }

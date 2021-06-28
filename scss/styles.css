@@ -79,11 +79,19 @@
   color: chartreuse;
 }
 
-.primaryTitle {
+.headerSecondary {
+  font-size: 15px;
+}
+
+.headerprimary {
   font-size: 20px;
 }
 
-.secondaryTitle {
+.titlePrimary {
+  font-size: 20px;
+}
+
+.titleSecondary {
   font-size: 30px;
 }
 
