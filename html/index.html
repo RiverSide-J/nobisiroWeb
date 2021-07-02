@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1204, initial-scale=1.0">
     <!-- css scss -->
+    <!-- <link rel="stylesheet" href="../css/normalize.css"> -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../scss/styles.css">
     <!-- タイトル -->
     <title>SITE_TITLE</title>
   </head>
-  
+
   <body class="body">
     <!-- ヘッダー -->
     <header class="header">
@@ -21,7 +22,7 @@
       <!-- 右側のメニュー -->
       <ul class="headerMenu">
         <li class="headerMenu_item">
-          <a class="headerNews" href="">
+          <a id="news" class="headerSecondary" href="">
             NEWS
           </a>
           <br>
@@ -31,7 +32,7 @@
         </li>
         
         <li class="headerMenu_item">
-          <a class="headerPortfolid" href="">
+          <a class="headerSecondary" href="">
             PORTFOLID
           </a>
           <br>
@@ -41,7 +42,7 @@
         </li>
         
         <li class="headerMenu_item">
-          <a id="blog" class="headerBlog" href="">
+          <a class="headerSecondary" href="">
             BLOG
           </a>
           <br>
@@ -53,24 +54,25 @@
     </header>
 
     <main class="main">
-      <section class="mainWrap">
         <!-- タイトル下の文章 -->
-        <button class="mainWrap-button">
+        <button class="mainButton">
             scroll
             ↓
         </button>
-      </section>
     </main>
 
     <!-- ニュース -->
     <section class="news">
-      <h5 class="titlePrimary">NEWS</h5>
+      <h1 class="titlePrimary">NEWS</h1>
       <h3 class="titleSecondary">お知らせ</h3>
-
       <span class="">
         このセクションでは、お知らせをリストにして並べています。
       </span>
-      <button class="button">MORE</button>
+      <button class="button">
+        <a href="">
+         MORE
+        </a> 
+       </button>
 
       <section class="newsAnnounce">
         <h5 class="">カテゴリー</h5>
@@ -90,7 +92,11 @@
         このセクションは、作成したポートフォリオのサイト一覧を並べています。
         サイト１
       </span>
-      <button class="button">MORE</button>
+      <button class="button">
+        <a href="">
+         MORE
+        </a> 
+       </button>
     </section>
     
     <!-- 記事 -->
@@ -107,13 +113,14 @@
       <!-- スライドショー 画像三つ見えるやつ -->
       <section>
         <h2>カテゴリー</h2>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
         サイト１
       </section>
 
-       <button class="button">MORE</button>
+       <button class="button">
+         <a href="">
+          MORE
+         </a> 
+        </button>
     </section>
       
     <!-- フッター -->
@@ -132,5 +139,3 @@
     </footer>
   </body>
 </html>
-
-
