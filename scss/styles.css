@@ -6,11 +6,13 @@ html {
   top: 0;
   position: -webkit-sticky;
   position: sticky;
+  POSITION: FIXED;
 }
 
 .headerTitle {
   font-size: 17px;
   font-weight: bold;
+  color: white;
 }
 
 .headerMenu {
@@ -27,21 +29,29 @@ html {
 .headerPrimary {
   font-size: 16px;
   font-weight: bold;
+  color: white;
+}
+
+.headerSecondary {
+  color: white;
 }
 
 .headerPortfolid {
   font-size: 11px;
   font-weight: bold;
+  color: white;
 }
 
 .headerBlog {
   font-size: 11px;
   font-weight: bold;
+  color: white;
 }
 
 .headerNews {
   font-size: 11px;
   font-weight: bold;
+  color: white;
 }
 
 .main {
@@ -61,14 +71,17 @@ html {
 .news {
   width: 100%;
   height: 400px;
-  background: #5B5B5B;
+  background: #5c5c5c;
 }
 
-.newsAnnounce {
+.newsUnit {
   width: 400px;
   height: 200px;
   border-radius: 25px;
   border: 4px red solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .portfolio {
@@ -110,16 +123,20 @@ html {
 
 .titlePrimary {
   font-size: 20px;
+  color: white;
 }
 
 .titleSecondary {
   font-size: 30px;
+  color: white;
 }
 
 .button {
-  width: 129px;
-  height: 35px;
+  width: 155px;
+  height: 38px;
   border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .info {
