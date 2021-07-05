@@ -10,9 +10,10 @@ html {
 }
 
 .headerTitle {
-  font-size: 17px;
+  font-size: 24px;
   font-weight: bold;
   color: white;
+  text-decoration: none;
 }
 
 .headerMenu {
@@ -26,13 +27,16 @@ html {
   float: left;
 }
 
-.headerPrimary {
-  font-size: 16px;
+.commonPrimary {
   font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
   color: white;
 }
 
-.headerSecondary {
+.commonSecondary {
+  font-size: 14px;
+  text-decoration: none;
   color: white;
 }
 
@@ -79,6 +83,7 @@ html {
   height: 200px;
   border-radius: 25px;
   border: 4px red solid;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,34 +109,29 @@ html {
 
 .footerMain {
   font-size: 60px;
-  padding: 60px 0 130px 120px;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .footerMenu {
   font-size: 20px;
   color: #BCBCBC;
-  margin-bottom: 20px;
   border-bottom: 2px #BCBCBC solid;
 }
 
 .footerSecondary {
   font-size: 10px;
   color: chartreuse;
-  text-align: center;
 }
 
 .titlePrimary {
   font-size: 20px;
-  color: white;
 }
 
 .titleSecondary {
   font-size: 30px;
-  color: white;
 }
 
-.button {
+.moreButton {
   width: 155px;
   height: 38px;
   border-radius: 25px;
