@@ -63,90 +63,115 @@
 
     <!-- ニュース -->
     <section class="news">
-      <h1 class="titlePrimary">NEWS</h1>
-      <h3 class="titleSecondary">お知らせ</h3>
-      <span class="info">
-        このセクションでは、お知らせをリストにして並べています。
-      </span>
-      <button class="moreButton">
-        <a href="">
-         MORE
-        </a> 
-       </button>
+      <!-- ニュースのタイトルグループ -->
+      <div class="newsGroup">
+        <h1 class="titlePrimary">NEWS</h1>
+        <h3 class="titleSecondary">お知らせ</h3>
+        <!-- 共通クラスありの説明文 -->
+        <span class="info">
+          このセクションでは、
+          <br>
+          お知らせをリストにして並べています。
+        </span>
+        <!-- 共通クラスありのボタン -->
+        <button class="moreButton">
+          <a href="">
+            MORE
+          </a> 
+        </button>
+      </div>
 
-      <article class="newsUnit">
-        <section class="newsUnit_title">
-          <h5 class="">カテゴリー</h5>
-          <h5 class="">2021/06/11</h5>
-        </section>
-        <a class="newsUnit_text" href="">
-          タイトルタイトルタイトルタイトルタイトル
-        </a>
-      </article>
+        <!-- ニュースのお知らせボード -->
+        <!-- microCMSで追加機能を加える -->
+        <div class="newsUnit">
+          <!-- カテゴリと日付 -->
+          <section 
+          class="newsUnit_title">
+            <h5 class="">カテゴリー</h5>
+            <h5 class="">2021/06/11</h5>
+          </section>
+          <!-- タイトル -->
+          <a class="newsUnit_text" href="">
+            タイトルタイトルタイトルタイトルタイトル
+          </a>
+        </div>
     </section>
-
+      
     <!-- 実績 -->
     <section class="portfolio">
-      <h5 class="titlePrimary">PORTFOLIO</h5>
-      <h3 class="titleSecondary">実績</h3>
-      <!-- スライドショー 画像一個ずつ
-      サイト１ -->
-      
-      <span class="info">
-        このセクションは、作成したポートフォリオのサイト一覧を並べています。
+      <!-- スライドショー 画像一個ずつサイト１ -->
+      <div class="portfolioSlider"> 
+        <img src="" alt="">
         サイト１
-      </span>
-      <button class="moreButton">
-        <a href="">
-         MORE
-        </a> 
-       </button>
+      </div>
+      
+      <div class="portfolioGroup">
+        <h5 class="titlePrimary">PORTFOLIO</h5>
+        <h3 class="titleSecondary">実績</h3>
+        
+        <span class="info">
+          このセクションでは、
+          <br>
+          作成したポートフォリオのサイト一覧を並べています。
+        </span>
+        <button class="moreButton">
+          <a href="">
+           MORE
+          </a> 
+         </button>
+      </div>
     </section>
     
     <!-- 記事 -->
     <section class="blog">
-      タイトル
-      <h5 class="titlePrimary">BLOG</h5>
-      <h3 class="titleSecondary">記事</h3>
-      
-      <!-- 説明文 -->
-      <span class="info">
-        このセクションでは、作成した記事一覧を表示しています。
-      </span>
+      <div class="blogGroup">
+        <h5 class="titlePrimary">BLOG</h5>
+        <h3 class="titleSecondary">記事</h3>
+        
+        <!-- 説明文 -->
+        <span class="info">
+          このセクションでは、
+          <br>
+          作成した記事一覧を表示しています。
+        </span>
+      </div>
 
       <!-- スライドショー 画像三つ見えるやつ -->
-      <section>
-        <h2>カテゴリー</h2>
+      <section class="blogSlider">
+        <h2 class="blogSlider_title">カテゴリー</h2>
+        <div class="blogSlider_inner"> 
+          <img src="" alt="">
+        </div>
         サイト１
       </section>
 
-       <button class="moreButton">
-         <a href="">
-          MORE
-         </a> 
-        </button>
+      <button class="moreButton">
+        <a href="">
+        MORE
+        </a> 
+      </button>
     </section>
       
     <!-- フッター -->
     <footer class="footer">
-      <h4 class="footerMain">SITE_TITLE</h4>
-      
-      
-      <ul class="footerMenu">
-        <li>
-          <a class="commonPrimary" href="">お知らせ</a>
-        </li>
-        <li>
-          <a class="commonPrimary" href="">実績</a>
-        </li>
-        <li>
-          <a class="commonPrimary" href="">記事</a>
-        </li>
-      </ul>
+      <div class="footerGroup">
+        <h4 class="footerGroup_Main">SITE_TITLE</h4>
+        <ul class="footerGroup_Menu">
+          <li>
+            <a class="commonPrimary" href="">お知らせ</a>
+          </li>
+          <li>
+            <a class="commonPrimary" href="">実績</a>
+          </li>
+          <li>
+            <a class="commonPrimary" href="">記事</a>
+          </li>
+        </ul>
+      </div>
 
-      <h1 class="footerSecondary">
+      <h3 class="footerSecondary">
         ©️ノビシロテック sample 2021
-      </h1>
+      </h3>
     </footer>
   </body>
 </html>
