@@ -1,3 +1,8 @@
+// カーソルで選択中に色変化（準備）
+button:link{
+  color:blue;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -51,19 +56,19 @@ html{
 
 // メイン
 .main{
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
   background-color: #000000;
-  &Button{
-      width: 320px;
-      height: 400px;
+  &Feature{
+    width: 400px;
+    height: 400px;
+    &_Button{
       font-size: 30px;
-      background: transparent;
-      opacity: 0.4;
       color: white;
+      background: transparent;
+      opacity: 0.6;
     }
+  }
 }
+
 
 // ニュース
 .news{
