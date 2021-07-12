@@ -81,15 +81,22 @@ html{
     &Group{
     }
     &Unit{
+      width: 670px;
+      height: 100px;
       display: flex;
       border: 2px red solid;
-      border-radius: 25px;
+      border-radius: 10px;
       background-color: white;
       &_title{
-
+        line-height: 1.5;
+        padding: 25px 50px 0 50px;
       }
       &_text{
-        
+        line-height: 6;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
       }
     }
 }
@@ -192,6 +199,7 @@ html{
   font-size: 30px;
 }
 .titleSecondary{
+  line-height: 1.5;
   font-size: 60px;
 }
 
@@ -200,13 +208,20 @@ html{
   width: 200px;
   height: 40px;
   border-radius: 25px;
-  cursor: pointer;
+  margin-top: 40px;
   font-weight: bold;
+  text-decoration: none;
+
   background-color: #EBEBEB;
+  &_Cursor{
+    text-decoration: none;
+    cursor: pointer; 
+
+  }
 }
 
 // 説明文
 .info{
   font-size: 16px;
+  line-height: 1.5;
 }
-

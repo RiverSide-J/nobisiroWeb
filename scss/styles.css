@@ -83,12 +83,27 @@ html {
 }
 
 .newsUnit {
+  width: 670px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 2px red solid;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: white;
+}
+
+.newsUnit_title {
+  line-height: 1.5;
+  padding: 25px 50px 0 50px;
+}
+
+.newsUnit_text {
+  line-height: 6;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .portfolio {
@@ -187,6 +202,7 @@ html {
 }
 
 .titleSecondary {
+  line-height: 1.5;
   font-size: 60px;
 }
 
@@ -194,12 +210,19 @@ html {
   width: 200px;
   height: 40px;
   border-radius: 25px;
-  cursor: pointer;
+  margin-top: 40px;
   font-weight: bold;
+  text-decoration: none;
   background-color: #EBEBEB;
+}
+
+.moreButton_Cursor {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .info {
   font-size: 16px;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=styles.css.map */
