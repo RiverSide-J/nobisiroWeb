@@ -79,27 +79,29 @@ html {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
   background: #5c5c5c;
 }
 
 .newsUnit {
   width: 670px;
-  height: 100px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px red solid;
+  border: none;
   border-radius: 10px;
   background-color: white;
 }
 
 .newsUnit_title {
   line-height: 1.5;
-  padding: 25px 50px 0 50px;
+  font-size: 12px;
+  margin: 10px 50px 0 50px;
 }
 
 .newsUnit_text {
-  line-height: 6;
+  line-height: 4;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -112,17 +114,21 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #919191;
 }
 
 .portfolioSlider {
-  width: 150px;
-  height: 150px;
-  padding: 0 30px;
-  margin: 20px 20px;
+  width: 700px;
+  height: 250px;
+  margin: 150px 58px;
   background-color: #C4C4C4;
+}
+
+.portfolioSlider_box {
+  width: 200px;
 }
 
 .portfolioGroup {
@@ -132,6 +138,7 @@ html {
 .blog {
   width: 100%;
   height: auto;
+  text-align: center;
   background: #BCBCBC;
 }
 
@@ -141,6 +148,10 @@ html {
   padding: 0 30px;
   margin: 20px 20px;
   background-color: #C4C4C4;
+}
+
+button.moreButton {
+  margin-bottom: 100px;
 }
 
 .footer {
@@ -207,8 +218,8 @@ html {
 }
 
 .moreButton {
-  width: 200px;
-  height: 40px;
+  width: 220px;
+  height: 50px;
   border-radius: 25px;
   margin-top: 40px;
   font-weight: bold;
@@ -224,5 +235,11 @@ html {
 .info {
   font-size: 16px;
   line-height: 1.5;
+  position: relative;
+}
+
+.SliderImage {
+  width: 100%;
+  background-color: chartreuse;
 }
 /*# sourceMappingURL=styles.css.map */

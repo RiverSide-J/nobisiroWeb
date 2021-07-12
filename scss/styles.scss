@@ -77,22 +77,24 @@ html{
   padding: 150px 80px;
   display: flex;
   box-sizing: border-box;
+  text-align: center;
   background: hsl(0, 0%, 36%);
     &Group{
     }
     &Unit{
       width: 670px;
-      height: 100px;
+      height: 60px;
       display: flex;
-      border: 2px red solid;
+      border:none;
       border-radius: 10px;
       background-color: white;
       &_title{
         line-height: 1.5;
-        padding: 25px 50px 0 50px;
+        font-size: 12px;
+        margin: 10px 50px 0 50px;
       }
       &_text{
-        line-height: 6;
+        line-height: 4;
         font-size: 16px;
         font-weight: bold;
         text-decoration: none;
@@ -106,14 +108,17 @@ html{
   width: 100%;
   height: auto;
   display: flex;
+  text-align: center;
   box-sizing: border-box;
   background: #919191;
   &Slider{
-    width: 150px;
-    height: 150px;
-    padding: 0 30px;
-    margin: 20px 20px;
+    width: 700px;
+    height: 250px;
+    margin: 150px 58px;
     background-color: #C4C4C4;
+    &_box{
+      width: 200px;
+    }
   }
   &Group{
     padding: 112px 205px;
@@ -125,8 +130,12 @@ html{
 .blog{
   width: 100%;
   height: auto;
+  text-align: center;
   background: #BCBCBC;
   &blogGroup{
+    &title{
+      
+    }
   }
   &blogSlider{
     width: 150px;
@@ -135,12 +144,15 @@ html{
     margin: 20px 20px;
     background-color: #C4C4C4;
     &_title{
-
     }
     &_inner{
       
     }
   }
+}
+
+button.moreButton{
+  margin-bottom: 100px;
 }
 
 // フッター
@@ -205,13 +217,12 @@ html{
 
 // ボタン関係
 .moreButton{
-  width: 200px;
-  height: 40px;
+  width: 220px;
+  height: 50px;
   border-radius: 25px;
   margin-top: 40px;
   font-weight: bold;
   text-decoration: none;
-
   background-color: #EBEBEB;
   &_Cursor{
     text-decoration: none;
@@ -224,4 +235,11 @@ html{
 .info{
   font-size: 16px;
   line-height: 1.5;
+  position: relative;
+}
+
+// スライドショー
+.SliderImage{
+  width: 100%;
+  background-color: chartreuse;
 }

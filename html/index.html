@@ -15,7 +15,6 @@
   <body class="body">
     <!-- ヘッダー -->
     <header class="header">
-
       <!-- タイトル -->
       <a href="" class="headerTitle">SITE_TITLE</a>
       
@@ -56,6 +55,7 @@
     <main class="main">
       <div class="mainFeature">
         <!-- タイトル下の文章 -->
+        <!-- ボタンを押すとニュースに移動 -->
         <button class="mainFeature_Button">
           scroll
           <br>
@@ -66,19 +66,19 @@
 
     <!-- ニュース -->
     <section class="news">
-      <!-- ニュースのタイトルグループ -->
+      <!-- ニュース「タイトル」 -->
       <div class="newsGroup">
         <h1 class="titlePrimary">NEWS</h1>
         <h3 class="titleSecondary">お知らせ</h3>
-        <!-- 共通クラスありの説明文 -->
+        <!-- ニュース「説明文」 -->
         <span class="info">
           このセクションでは、
           <br>
-          お知らせをリストにして並べています。
+          お知らせをリストにして並べます。
         </span>
-        <!-- 共通クラスありのボタン -->
+        <!-- ニュース「ボタン」 -->
         <button class="moreButton">
-          <a href="">
+          <a class="moreButton_Cursor" href="">
             MORE
           </a>
         </button>
@@ -104,18 +104,25 @@
     <section class="portfolio">
       <!-- スライドショー 画像一個ずつサイト１ -->
       <div class="portfolioSlider"> 
+        <img class="SliderImage" src="" alt="">
         サイト１
       </div>
       
+      <!-- 実績「タイトル」 -->
       <div class="portfolioGroup">
-        <h5 class="titlePrimary">PORTFOLIO</h5>
-        <h3 class="titleSecondary">実績</h3>
+        <div class="portfolioGroup_title">
+          <h5 class="titlePrimary">PORTFOLIO</h5>
+          <h3 class="titleSecondary">実績</h3>
+        </div>
         
+        <!-- 実績「説明文」 -->
         <span class="info">
           このセクションでは、
           <br>
           作成したポートフォリオのサイト一覧を並べています。
         </span>
+
+        <!-- 実績「ボタン」 -->
         <button class="moreButton">
           <a href="">
            MORE
@@ -127,6 +134,7 @@
     <!-- 記事 -->
     <section class="blog">
       <div class="blogGroup">
+        <!-- 記事「タイトル」 -->
         <h5 class="titlePrimary">BLOG</h5>
         <h3 class="titleSecondary">記事</h3>
         
@@ -141,12 +149,13 @@
       <!-- スライドショー 画像三つ見えるやつ -->
       <section class="blogSlider">
         <h2 class="blogSlider_title">カテゴリー</h2>
+        <img class="SliderImage" src="" alt="">
         <div class="blogSlider_inner"> 
-          <img src="" alt="">
         </div>
         サイト１
       </section>
 
+      <!-- 記事「ボタン」 -->
       <button class="moreButton">
         <a href="">
         MORE
@@ -157,7 +166,9 @@
     <!-- フッター -->
     <footer class="footer">
       <div class="footerGroup">
+        <!-- フッター「タイトル」 -->
         <h4 class="footerGroup_Main">SITE_TITLE</h4>
+        <!-- フッター「メニュー（お知らせ〜記事） -->
         <ul class="footerGroup_Menu">
           <li>
             <a class="commonPrimary" href="">お知らせ</a>
@@ -171,6 +182,7 @@
         </ul>
       </div>
 
+      <!-- フッター「著作権マーク」 -->
       <h3 class="footerSecondary">
         ©️ノビシロテック sample 2021
       </h3>
