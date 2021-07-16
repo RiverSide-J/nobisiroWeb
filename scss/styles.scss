@@ -184,8 +184,15 @@
     justify-content: space-around;
 
     &_Main{
+      text-decoration: none;
       font-size: 60px;
       color: rgba(255, 255, 255, 0.3);
+      // ホバー[文字色が変化]
+      transition: color .2s;
+      &:hover{
+        color: gold;
+        box-shadow: 0 0 8px darkkhaki;
+      }
     }
     &_Menu{
       margin: 20px 0 0 0;

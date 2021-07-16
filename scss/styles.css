@@ -208,8 +208,17 @@
 }
 
 .footerGroup_Main {
+  text-decoration: none;
   font-size: 60px;
   color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.footerGroup_Main:hover {
+  color: gold;
+  -webkit-box-shadow: 0 0 8px darkkhaki;
+          box-shadow: 0 0 8px darkkhaki;
 }
 
 .footerGroup_Menu {
