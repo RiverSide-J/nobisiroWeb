@@ -1,9 +1,4 @@
-// カーソルで選択中に色変化（準備）
-button:link{
-  color:blue;
-}
-
-html{
+*{
   scroll-behavior: smooth;
 }
 // ヘッダー
@@ -21,7 +16,12 @@ html{
       text-decoration:none;
       color: white;
       vertical-align: middle;
-
+      // ホバー[文字色が変化]
+      color: powderblue;
+      transition: color .2s;
+      &:hover{
+        color: gold;
+      }
     }
 
     &Menu{
@@ -76,22 +76,32 @@ html{
   height: auto;
   padding: 150px 80px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
   text-align: center;
   background: hsl(0, 0%, 36%);
     &Group{
     }
     &Unit{
-      width: 670px;
-      height: 60px;
+      width: 47%;
+      height: auto;
       display: flex;
       border:none;
       border-radius: 10px;
       background-color: white;
-      &_title{
-        line-height: 1.5;
-        font-size: 12px;
-        margin: 10px 50px 0 50px;
+      &_menu{
+        margin: 0 auto;
+        width: 80%;
+        &-Row{
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          gap: 20px;
+          &:not(:last-child){
+            border-bottom: 3px #808080 solid;
+          }
+        }
       }
       &_text{
         line-height: 4;
@@ -101,7 +111,7 @@ html{
         color: black;
       }
     }
-}
+  }
 
 // 実績
 .portfolio{
@@ -132,27 +142,19 @@ html{
   height: auto;
   text-align: center;
   background: #BCBCBC;
-  &blogGroup{
-    &title{
-      
+  padding: 1px;
+  &Group{
+    &title{   
     }
   }
-  &blogSlider{
-    width: 150px;
+  &Slider{
+    width: auto;
     height: 150px;
-    padding: 0 30px;
     margin: 20px 20px;
     background-color: #C4C4C4;
     &_title{
     }
-    &_inner{
-      
-    }
   }
-}
-
-button.moreButton{
-  margin-bottom: 100px;
 }
 
 // フッター
@@ -196,14 +198,26 @@ button.moreButton{
 .commonPrimary{
   font-weight: bold;
   font-size: 20px;  
-  color: white;
   text-decoration: none;
+  color: white;
+  // ホバー[文字色が変化]
+  color: powderblue;
+  transition: color .2s;
+  &:hover{
+    color: gold;
+  }
 }
 
 .commonSecondary{
   font-size: 14px;
   text-decoration: none;
   color: white;
+  // ホバー[文字色が変化]
+  color: powderblue;
+  transition: color .2s;
+  &:hover{
+    color: gold;
+  }
 }
 
 // （primary/secondary)
@@ -220,14 +234,16 @@ button.moreButton{
   width: 220px;
   height: 50px;
   border-radius: 25px;
-  margin-top: 40px;
-  font-weight: bold;
+  margin: 40px auto 100px auto;
+  padding-bottom: 1px;
+  display: block;
   text-decoration: none;
+  font-weight: bold;
   background-color: #EBEBEB;
+  
   &_Cursor{
     text-decoration: none;
-    cursor: pointer; 
-
+    cursor: pointer;
   }
 }
 
@@ -235,7 +251,9 @@ button.moreButton{
 .info{
   font-size: 16px;
   line-height: 1.5;
-  position: relative;
+  text-align: start;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 // スライドショー
