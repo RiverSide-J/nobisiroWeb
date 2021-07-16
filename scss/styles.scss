@@ -21,6 +21,8 @@
       transition: color .2s;
       &:hover{
         color: gold;
+        box-shadow: 0 0 8px darkkhaki;
+
       }
     }
 
@@ -58,13 +60,14 @@
 .main{
   background-color: #000000;
   &Feature{
-    width: 400px;
+    width: auto;
     height: 400px;
+    text-align: center;
     &_Button{
       font-size: 30px;
+      opacity: 0.6;
       color: white;
       background: transparent;
-      opacity: 0.6;
     }
   }
 }
@@ -109,6 +112,16 @@
         font-weight: bold;
         text-decoration: none;
         color: black;
+        // ホバー[アンダーライン追加]
+        border-bottom:none;
+        margin-bottom: none;
+        transition: border-bottom .2s;
+        transition: margin-bottom .2s;
+        &:hover{
+          border-bottom: 5px blue solid;
+          margin-bottom: 5px;
+          box-shadow: 0 0 8px darkkhaki;
+        }
       }
     }
   }
@@ -205,6 +218,7 @@
   transition: color .2s;
   &:hover{
     color: gold;
+    box-shadow: 0 0 8px darkkhaki;
   }
 }
 
@@ -217,6 +231,7 @@
   transition: color .2s;
   &:hover{
     color: gold;
+    box-shadow: 0 0 8px darkkhaki;
   }
 }
 

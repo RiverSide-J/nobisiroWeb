@@ -24,6 +24,8 @@
 
 .headerTitle:hover {
   color: gold;
+  -webkit-box-shadow: 0 0 8px darkkhaki;
+          box-shadow: 0 0 8px darkkhaki;
 }
 
 .headerMenu {
@@ -62,15 +64,16 @@
 }
 
 .mainFeature {
-  width: 400px;
+  width: auto;
   height: 400px;
+  text-align: center;
 }
 
 .mainFeature_Button {
   font-size: 30px;
+  opacity: 0.6;
   color: white;
   background: transparent;
-  opacity: 0.6;
 }
 
 .news {
@@ -129,6 +132,19 @@
   font-weight: bold;
   text-decoration: none;
   color: black;
+  border-bottom: none;
+  margin-bottom: none;
+  -webkit-transition: border-bottom .2s;
+  transition: border-bottom .2s;
+  -webkit-transition: margin-bottom .2s;
+  transition: margin-bottom .2s;
+}
+
+.newsUnit_text:hover {
+  border-bottom: 5px blue solid;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0 0 8px darkkhaki;
+          box-shadow: 0 0 8px darkkhaki;
 }
 
 .portfolio {
@@ -226,6 +242,8 @@
 
 .commonPrimary:hover {
   color: gold;
+  -webkit-box-shadow: 0 0 8px darkkhaki;
+          box-shadow: 0 0 8px darkkhaki;
 }
 
 .commonSecondary {
@@ -239,6 +257,8 @@
 
 .commonSecondary:hover {
   color: gold;
+  -webkit-box-shadow: 0 0 8px darkkhaki;
+          box-shadow: 0 0 8px darkkhaki;
 }
 
 .titlePrimary {
