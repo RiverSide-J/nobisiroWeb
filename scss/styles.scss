@@ -64,17 +64,30 @@
       left: 0;
       right: 0;
       bottom: 1.5ex;
-      display: block;
-      position: absolute;
       margin: 0 auto;
+      position: absolute;
       font-size: 30px;
       color: white;
-      background: transparent;
       opacity: 0.6;
+      background: transparent;
+      display: block;
+      // 上下移動アニメーション
+      animation-name: UpUpDownDown;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-duration: 1.5s;
     }
   }
 }
-
+@keyframes UpUpDownDown{
+  0%{
+    transform: translate(0,0px);    
+  }
+  100%{
+    transform: translate(0,-15px);
+  }
+}
 
 // ニュース
 .news{

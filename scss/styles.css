@@ -70,13 +70,45 @@
   left: 0;
   right: 0;
   bottom: 1.5ex;
-  display: block;
-  position: absolute;
   margin: 0 auto;
+  position: absolute;
   font-size: 30px;
   color: white;
-  background: transparent;
   opacity: 0.6;
+  background: transparent;
+  display: block;
+  -webkit-animation-name: UpUpDownDown;
+          animation-name: UpUpDownDown;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes UpUpDownDown {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+  }
+}
+
+@keyframes UpUpDownDown {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+  }
 }
 
 .news {
