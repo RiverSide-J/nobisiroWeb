@@ -63,7 +63,7 @@
     &_Button{
       left: 0;
       right: 0;
-      bottom: 1.5ex;
+      bottom: 0.5ex;
       margin: 0 auto;
       position: absolute;
       font-size: 30px;
@@ -80,6 +80,7 @@
     }
   }
 }
+// アニメーションネーム
 @keyframes UpUpDownDown{
   0%{
     transform: translate(0,0px);    
@@ -117,6 +118,7 @@
           align-items: center;
           text-decoration: none;
           gap: 20px;
+          // ６番目以外を[border-bottom]を追加
           &:not(:last-child){
             border-bottom: 3px #808080 solid;
           }
@@ -190,11 +192,17 @@
     justify-content: space-around;
 
     &_Main{
+      margin: 0.1em 0 0.3em 0;
       font-size: 60px;
       color: rgba(255, 255, 255, 0.3);
+      // 色変化アニメーション
+      transition: color .2s;
+      &:hover{
+        color: gold;
+      }
     }
     &_Menu{
-      margin: 20px 0 0 0;
+      margin: 27px 0 0 0;
       gap: 20px;
       font-size: 20px;
       list-style: none;

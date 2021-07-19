@@ -69,7 +69,7 @@
 .mainFeature_Button {
   left: 0;
   right: 0;
-  bottom: 1.5ex;
+  bottom: 0.5ex;
   margin: 0 auto;
   position: absolute;
   font-size: 30px;
@@ -230,12 +230,19 @@
 }
 
 .footerGroup_Main {
+  margin: 0.1em 0 0.3em 0;
   font-size: 60px;
   color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.footerGroup_Main:hover {
+  color: gold;
 }
 
 .footerGroup_Menu {
-  margin: 20px 0 0 0;
+  margin: 27px 0 0 0;
   gap: 20px;
   font-size: 20px;
   list-style: none;

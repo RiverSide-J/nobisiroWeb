@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../scss/styles.css">
     <!-- jquery -->
-    <link rel="stylesheet" href="../jquery/homepage.js">
-    <link rel="stylesheet" href="../jquery/jquery-3.6.0.min.js">
+    <script src="jquery-3.6.0.min.js"></script>
     <!-- タイトル -->
     <title>SITE_TITLE</title>
   </head>
@@ -46,7 +45,7 @@
             PORTFOLID
           </a>
           <br>
-          <a class="commonPrimary" href="">
+          <a id="portfolidJP" class="commonPrimary" href="">
             実績
           </a>
         </li>
@@ -63,7 +62,7 @@
       </ul>
     </header>
 
-    <main class="main">
+    <main id="mainHome" class="main">
       <div class="mainFeature">
         <!-- タイトル下の文章 -->
         <!-- ボタンを押すとニュースに移動 -->
@@ -76,7 +75,7 @@
     </main>
 
     <!-- ニュース -->
-    <section class="news">
+    <section id="newsArea" class="news">
       <!-- ニュース「タイトル」 -->
       <div class="newsGroup">
         <h1 class="titlePrimary">NEWS</h1>
@@ -159,7 +158,7 @@
     </section>
       
     <!-- 実績 -->
-    <section class="portfolio">
+    <section id="portfolioArea" class="portfolio">
       <!-- スライドショー 画像一個ずつサイト１ -->
       <div class="portfolioSlider"> 
         <img class="SliderImage" src="" alt="">
@@ -190,7 +189,7 @@
     </section>
     
     <!-- 記事 -->
-    <section class="blog">
+    <section id="blogArea" class="blog">
       <div class="blogGroup">
         <!-- 記事「タイトル」 -->
         <h5 class="titlePrimary">BLOG</h5>
