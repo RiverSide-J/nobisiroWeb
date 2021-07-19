@@ -58,9 +58,15 @@
 .main{
   background-color: #000000;
   &Feature{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100vh;
     &_Button{
+      left: 0;
+      right: 0;
+      bottom: 1.5ex;
+      display: block;
+      position: absolute;
+      margin: 0 auto;
       font-size: 30px;
       color: white;
       background: transparent;
