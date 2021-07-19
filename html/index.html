@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1204, initial-scale=1.0">
+    <!-- ページ先・html -->
+    <link rel="stylesheet" href="../html/index_sp.html">
     <!-- css scss -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../scss/styles.css">
@@ -11,65 +13,83 @@
     <script src="jquery-3.6.0.min.js"></script>
     <!-- タイトル -->
     <title>SITE_TITLE</title>
+
+    <!-- jquery -->
+    <!--  -->
+    <!-- リンク先移動用 -->
+    <script>
+      
+    </script>
   </head>
 
   <body class="body">
     <!-- ヘッダー -->
     <header class="header">
       <!-- タイトル -->
-      <a id="titleHeader" href="" class="headerTitle">SITE_TITLE</a>
+      <a id="titleHeader" href="#" class="headerTitle">SITE_TITLE</a>
       
       <!-- 右側のメニュー -->
       <ul class="headerMenu">
         <li class="headerMenu_item">
-          <a id="homeENG" class="commonSecondary" href="">
+          <a class="commonSecondary" href="#">
             HOME
           </a>
           <br>
-          <a id="homeJP" class="commonPrimary" href="">
+          <a class="commonPrimary" href="#">
             ホーム
           </a>
         </li>
         <li class="headerMenu_item">
-          <a id="newsENG" class="commonSecondary" href="">
+          <a class="commonSecondary" href="#newsArea">
             NEWS
           </a>
           <br>
-          <a id="homeJP" class="commonPrimary" href="">
+          <a class="commonPrimary" href="#newsArea">
             お知らせ
           </a>
         </li>
         
         <li class="headerMenu_item">
-          <a id="portfolidENG" class="commonSecondary" href="">
+          <a class="commonSecondary" href="#portfolidArea">
             PORTFOLID
           </a>
           <br>
-          <a id="portfolidJP" class="commonPrimary" href="">
+          <a class="commonPrimary" href="#portfolidArea">
             実績
           </a>
         </li>
         
         <li class="headerMenu_item">
-          <a id="blogENG" class="commonSecondary" href="">
+          <a class="commonSecondary" href="#blogArea">
             BLOG
           </a>
           <br>
-          <a id="blogJP" class="commonPrimary" href="">
+          <a class="commonPrimary" href="#blogArea">
             記事
+          </a>
+        </li>
+        <li class="headerMenu_item">
+          <a class="commonSecondary" href="#footerArea">
+            footer
+          </a>
+          <br>
+          <a class="commonPrimary" href="#footerArea">
+            フッター
           </a>
         </li>
       </ul>
     </header>
 
-    <main id="mainHome" class="main">
+    <main  class="main">
       <div class="mainFeature">
         <!-- タイトル下の文章 -->
         <!-- ボタンを押すとニュースに移動 -->
         <button class="mainFeature_Button">
-          scroll
-          <br>
-          ↓
+          <a class="mainFeature_Buttonintro" href="#newsArea">
+            scroll
+            <br>
+            ↓
+          </a>
         </button>
       </div>
     </main>
@@ -158,7 +178,7 @@
     </section>
       
     <!-- 実績 -->
-    <section id="portfolioArea" class="portfolio">
+    <section id="portfolidArea" class="portfolio">
       <!-- スライドショー 画像一個ずつサイト１ -->
       <div class="portfolioSlider"> 
         <img class="SliderImage" src="" alt="">
@@ -222,25 +242,27 @@
     </section>
       
     <!-- フッター -->
-    <footer class="footer">
+    <footer id="footerArea" class="footer">
       <div class="footerGroup">
         <!-- フッター「タイトル」 -->
-        <h4 id="titleFooter" class="footerGroup_Main">
-          SITE_TITLE
+        <h4 class="footerGroup_Main">
+          <a href="#">
+            SITE_TITLE
+          </a>
         </h4>
         <!-- フッター「メニュー（お知らせ〜記事） -->
         <ul class="footerGroup_Menu">
           <li>
-            <a class="commonPrimary" href="">ホーム</a>
+            <a class="commonPrimary" href="#">ホーム</a>
           </li>
           <li>
-            <a class="commonPrimary" href="">お知らせ</a>
+            <a class="commonPrimary" href="#newsArea">お知らせ</a>
           </li>
           <li>
-            <a class="commonPrimary" href="">実績</a>
+            <a class="commonPrimary" href="#portfolidArea">実績</a>
           </li>
           <li>
-            <a class="commonPrimary" href="">記事</a>
+            <a class="commonPrimary" href="#blogArea">記事</a>
           </li>
         </ul>
       </div>

@@ -1,5 +1,10 @@
 * {
   scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
 }
 
 .header {
@@ -69,8 +74,9 @@
 .mainFeature_Button {
   left: 0;
   right: 0;
-  bottom: 0.5ex;
+  bottom: 2.5ex;
   margin: 0 auto;
+  padding: 0;
   position: absolute;
   font-size: 30px;
   color: white;
@@ -87,6 +93,12 @@
           animation-direction: alternate;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
+}
+
+.mainFeature_Buttonintro {
+  display: block;
+  color: aliceblue;
+  text-decoration: none;
 }
 
 @-webkit-keyframes UpUpDownDown {
@@ -155,14 +167,15 @@
           align-items: center;
   text-decoration: none;
   gap: 20px;
+  padding: 15px 0;
 }
 
 .newsUnit_menu-Row:not(:last-child) {
+  padding: 15px 0;
   border-bottom: 3px #808080 solid;
 }
 
 .newsUnit_text {
-  line-height: 4;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -204,6 +217,10 @@
   padding: 1px;
 }
 
+.blogGroup {
+  padding-top: 30px;
+}
+
 .blogSlider {
   width: auto;
   height: 150px;
@@ -216,7 +233,7 @@
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 20px;
+  padding: 50px 20px 20px;
   background-color: #000000;
 }
 
@@ -230,7 +247,7 @@
 }
 
 .footerGroup_Main {
-  margin: 0.1em 0 0.3em 0;
+  margin: 0.1em 1em 0.9em 0;
   font-size: 60px;
   color: rgba(255, 255, 255, 0.3);
   -webkit-transition: color .2s;
@@ -253,7 +270,7 @@
 }
 
 .footerSecondary {
-  padding: 10px;
+  padding: 15px 0 0;
   font-size: 15px;
   text-align: center;
   color: rgba(255, 255, 255, 0.3);

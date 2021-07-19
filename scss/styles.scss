@@ -1,6 +1,11 @@
 *{
   scroll-behavior: smooth;
+  text-decoration: none;
 }
+a{
+  color: inherit;
+}
+
 // ヘッダー
 .header{ 
   width: 100%;
@@ -63,8 +68,9 @@
     &_Button{
       left: 0;
       right: 0;
-      bottom: 0.5ex;
+      bottom: 2.5ex;
       margin: 0 auto;
+      padding: 0;
       position: absolute;
       font-size: 30px;
       color: white;
@@ -77,6 +83,11 @@
       animation-iteration-count: infinite;
       animation-direction: alternate;
       animation-duration: 1.5s;
+      &intro{
+        display: block;
+        color: aliceblue;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -118,14 +129,15 @@
           align-items: center;
           text-decoration: none;
           gap: 20px;
+          padding: 15px 0;
           // ６番目以外を[border-bottom]を追加
           &:not(:last-child){
+            padding: 15px 0;
             border-bottom: 3px #808080 solid;
           }
         }
       }
       &_text{
-        line-height: 4;
         font-size: 16px;
         font-weight: bold;
         text-decoration: none;
@@ -153,7 +165,6 @@
   }
   &Group{
     padding: 112px 205px;
-
   }
 }
 
@@ -165,8 +176,7 @@
   background: #BCBCBC;
   padding: 1px;
   &Group{
-    &title{   
-    }
+    padding-top: 30px;
   }
   &Slider{
     width: auto;
@@ -183,16 +193,15 @@
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 50px 20px 20px;
   background-color: #000000;
-
   &Group{
     display: flex;
     border-bottom: 2px #BCBCBC solid;
     justify-content: space-around;
 
     &_Main{
-      margin: 0.1em 0 0.3em 0;
+      margin: 0.1em 1em 0.9em 0;
       font-size: 60px;
       color: rgba(255, 255, 255, 0.3);
       // 色変化アニメーション
@@ -210,9 +219,8 @@
       color: #BCBCBC;
     }
   }
-
   &Secondary{
-    padding: 10px;
+    padding: 15px 0 0;
     font-size: 15px;
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
@@ -288,3 +296,6 @@
   width: 100%;
   background-color: chartreuse;
 }
+
+// Jquery
+// 
