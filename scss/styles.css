@@ -7,6 +7,11 @@ a {
   color: inherit;
 }
 
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
 .header {
   width: 100%;
   height: auto;

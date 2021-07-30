@@ -7,22 +7,22 @@
     <!-- ページ先・html -->
     <link rel="stylesheet" href="../html/index_sp.html">
     <!-- css scss -->
-    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../scss/styles.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- jquery -->
     <script src="jquery-3.6.0.min.js"></script>
+    
+
     <!-- タイトル -->
     <title>SITE_TITLE</title>
-
-    <!-- jquery -->
-    <!--  -->
-    <!-- リンク先移動用 -->
-    <script>
-      
-    </script>
   </head>
 
   <body class="body">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- ヘッダー -->
     <header class="header">
       <!-- タイトル -->
@@ -176,13 +176,35 @@
          </ul>
       </div>
     </section>
+
+    <!-- スライドショー 画像一個ずつサイト１ -->
+    <!-- <div class="portfolioSlider"> 
+      <div class="swiper-container">
+      </div>
+      サイト１
+    </div> -->
       
     <!-- 実績 -->
     <section id="portfolidArea" class="portfolio">
-      <!-- スライドショー 画像一個ずつサイト１ -->
-      <div class="portfolioSlider"> 
-        <img class="SliderImage" src="" alt="">
-        サイト１
+
+      <!-- スライダーのメインコンテナの div 要素 -->
+      <div class="swiper-container"> 
+      <!-- ラッパーの（スライドを囲む） div 要素 -->
+      <div class="swiper-wrapper"> 
+      <!-- それぞれのスライドの div 要素 -->
+      <div class="swiper-slide"><img src="images/sample_01.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/sample_02.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/sample_03.png" alt=""></div>
+      </div>
+      <!-- ページネーションの div 要素 -->
+      <div class="swiper-pagination"></div>
+  
+      <!-- ナビゲーションボタンの div 要素-->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- スクロールバーの div 要素 -->
+      <div class="swiper-scrollbar"></div>
       </div>
       
       <!-- 実績「タイトル」 -->
@@ -207,6 +229,16 @@
          </button>
       </div>
     </section>
+
+          <!-- スライドショー 画像三つ見えるやつ -->
+      <!-- <section class="blogSlider">
+        <h2 class="blogSlider_title">カテゴリー</h2>
+        <div class="SliderImage">
+        </div>
+        <div class="blogSlider_inner"> 
+          サイト１
+        </div>
+      </section> -->
     
     <!-- 記事 -->
     <section id="blogArea" class="blog">
@@ -223,15 +255,25 @@
         </p>
       </div>
 
-      <!-- スライドショー 画像三つ見えるやつ -->
-      <section class="blogSlider">
-        <h2 class="blogSlider_title">カテゴリー</h2>
-        <div class="SliderImage">
-        </div>
-        <div class="blogSlider_inner"> 
-          サイト１
-        </div>
-      </section>
+      <!-- スライダーのメインコンテナの div 要素 -->
+      <div class="swiper-container"> 
+      <!-- ラッパーの（スライドを囲む） div 要素 -->
+      <div class="swiper-wrapper"> 
+      <!-- それぞれのスライドの div 要素 -->
+      <div class="swiper-slide"><img src="images/sample_01.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/sample_02.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/sample_03.png" alt=""></div>
+      </div>
+      <!-- ページネーションの div 要素 -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- ナビゲーションボタンの div 要素-->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- スクロールバーの div 要素 -->
+      <div class="swiper-scrollbar"></div>
+      </div>
 
       <!-- 記事「ボタン」 -->
       <button class="moreButton">
@@ -272,5 +314,11 @@
         ©️ノビシロテック sample 2021
       </h3>
     </footer>
+
+    <script type="module">
+      import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+    
+      const swiper = new Swiper(...)
+    </script>
   </body>
 </html>
