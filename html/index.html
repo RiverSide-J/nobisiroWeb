@@ -5,24 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1204, initial-scale=1.0">
     <!-- ページ先・html -->
-    <link rel="stylesheet" href="../html/index_sp.html">
+
     <!-- css scss -->
     <link rel="stylesheet" href="../scss/styles.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- jquery -->
-    <script src="jquery-3.6.0.min.js"></script>
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
     
+    <!-- swiper[スライドショー] -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.9/swiper-bundle.min.css" />
 
+  
     <!-- タイトル -->
     <title>SITE_TITLE</title>
   </head>
-
   <body class="body">
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <!-- ヘッダー -->
     <header class="header">
       <!-- タイトル -->
@@ -177,36 +174,32 @@
       </div>
     </section>
 
-    <!-- スライドショー 画像一個ずつサイト１ -->
-    <!-- <div class="portfolioSlider"> 
-      <div class="swiper-container">
-      </div>
-      サイト１
-    </div> -->
-      
+    
     <!-- 実績 -->
     <section id="portfolidArea" class="portfolio">
-
+      
+      <!-- スライドショー 画像一個ずつサイト１ -->
       <!-- スライダーのメインコンテナの div 要素 -->
       <div class="swiper-container"> 
-      <!-- ラッパーの（スライドを囲む） div 要素 -->
-      <div class="swiper-wrapper"> 
-      <!-- それぞれのスライドの div 要素 -->
-      <div class="swiper-slide"><img src="images/sample_01.png" alt=""></div>
-      <div class="swiper-slide"><img src="images/sample_02.png" alt=""></div>
-      <div class="swiper-slide"><img src="images/sample_03.png" alt=""></div>
-      </div>
-      <!-- ページネーションの div 要素 -->
-      <div class="swiper-pagination"></div>
-  
-      <!-- ナビゲーションボタンの div 要素-->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    
-      <!-- スクロールバーの div 要素 -->
-      <div class="swiper-scrollbar"></div>
-      </div>
+        <!-- ラッパーの（スライドを囲む） div 要素 -->
+        <div class="swiper-wrapper"> 
+          <!-- それぞれのスライドの div 要素 -->
+          <div class="swiper-slide"><img src="../image/140726167640_TP_V4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../image/DSCF2496_TP_V4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../image/ELLY863_kara-rihu14091309_TP_V4.jpg" alt=""></div>
+        </div>
+
+        <!-- ページネーションの div 要素 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- ナビゲーションボタンの div 要素-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       
+        <!-- スクロールバーの div 要素 -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
       <!-- 実績「タイトル」 -->
       <div class="portfolioGroup">
         <div class="portfolioGroup_title">
@@ -229,16 +222,6 @@
          </button>
       </div>
     </section>
-
-          <!-- スライドショー 画像三つ見えるやつ -->
-      <!-- <section class="blogSlider">
-        <h2 class="blogSlider_title">カテゴリー</h2>
-        <div class="SliderImage">
-        </div>
-        <div class="blogSlider_inner"> 
-          サイト１
-        </div>
-      </section> -->
     
     <!-- 記事 -->
     <section id="blogArea" class="blog">
@@ -254,25 +237,28 @@
           作成した記事一覧を表示しています。
         </p>
       </div>
-
+      
+      
+      <!-- スライドショー 画像一個ずつサイト１ -->
       <!-- スライダーのメインコンテナの div 要素 -->
       <div class="swiper-container"> 
-      <!-- ラッパーの（スライドを囲む） div 要素 -->
-      <div class="swiper-wrapper"> 
-      <!-- それぞれのスライドの div 要素 -->
-      <div class="swiper-slide"><img src="images/sample_01.png" alt=""></div>
-      <div class="swiper-slide"><img src="images/sample_02.png" alt=""></div>
-      <div class="swiper-slide"><img src="images/sample_03.png" alt=""></div>
-      </div>
-      <!-- ページネーションの div 要素 -->
-      <div class="swiper-pagination"></div>
-    
-      <!-- ナビゲーションボタンの div 要素-->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    
-      <!-- スクロールバーの div 要素 -->
-      <div class="swiper-scrollbar"></div>
+        <!-- ラッパーの（スライドを囲む） div 要素 -->
+        <div class="swiper-wrapper"> 
+          <!-- それぞれのスライドの div 要素 -->
+          <div class="swiper-slide"><img src="../image/140726167640_TP_V4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../image/DSCF2496_TP_V4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../image/ELLY863_kara-rihu14091309_TP_V4.jpg" alt=""></div>
+        </div>
+
+        <!-- ページネーションの div 要素 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- ナビゲーションボタンの div 要素-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- スクロールバーの div 要素 -->
+        <div class="swiper-scrollbar"></div>
       </div>
 
       <!-- 記事「ボタン」 -->
@@ -315,10 +301,8 @@
       </h3>
     </footer>
 
-    <script type="module">
-      import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
-    
-      const swiper = new Swiper(...)
-    </script>
+    <!-- swiper関係 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.9/swiper-bundle.min.js"></script>
+    <script src="../jquery/homepage.js"></script>
   </body>
 </html>

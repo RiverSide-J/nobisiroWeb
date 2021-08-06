@@ -6,37 +6,11 @@ a{
   color: inherit;
 }
 
-// swiper
-.swiper-container {
-  width: 600px;
-  height: 300px;
-}
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
 // ヘッダー
 .header{ 
   width: 100%;
   height: auto;
+  z-index: 100;
   // スクロール中にヘッダーが移動する
   top: 0;
   margin: 45px 0px 0px 60px;
@@ -318,11 +292,19 @@ const swiper = new Swiper('.swiper-container', {
   margin: 0 auto;
 }
 
-// スライドショー
-.SliderImage{
-  width: 100%;
-  background-color: chartreuse;
+// スライドショー [swiper]
+.swiper-container{
+
 }
 
-// Jquery
-// 
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+.swiper-wrapper{
+
+}
+
+.swiper-slide{
+
+}

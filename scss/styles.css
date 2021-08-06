@@ -7,14 +7,10 @@ a {
   color: inherit;
 }
 
-.swiper-container {
-  width: 600px;
-  height: 300px;
-}
-
 .header {
   width: 100%;
   height: auto;
+  z-index: 100;
   top: 0;
   margin: 45px 0px 0px 60px;
   POSITION: FIXED;
@@ -344,8 +340,8 @@ a {
   margin: 0 auto;
 }
 
-.SliderImage {
-  width: 100%;
-  background-color: chartreuse;
+.swiper-container {
+  width: 600px;
+  height: 300px;
 }
 /*# sourceMappingURL=styles.css.map */
