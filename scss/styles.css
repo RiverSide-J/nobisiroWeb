@@ -177,7 +177,7 @@ a {
 }
 
 .newsUnit_text {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   text-decoration: none;
   color: black;
@@ -343,5 +343,10 @@ a {
 .swiper-container {
   width: 600px;
   height: 300px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=styles.css.map */

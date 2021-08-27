@@ -130,11 +130,9 @@
       <!-- スライダーのメインコンテナの div 要素 -->
       <div class="swiper-container"> 
         <!-- ラッパーの（スライドを囲む） div 要素 -->
-        <div class="swiper-wrapper"> 
+        <div id="portfolio_list" class="swiper-wrapper"> 
           <!-- それぞれのスライドの div 要素 -->
-          <div class="swiper-slide"><img src="../image/140726167640_TP_V4.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../image/DSCF2496_TP_V4.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../image/ELLY863_kara-rihu14091309_TP_V4.jpg" alt=""></div>
+          
         </div>
 
         <!-- ページネーションの div 要素 -->
@@ -191,11 +189,8 @@
       <!-- スライダーのメインコンテナの div 要素 -->
       <div class="swiper-container"> 
         <!-- ラッパーの（スライドを囲む） div 要素 -->
-        <div class="swiper-wrapper"> 
+        <div id="blog_list" class="swiper-wrapper"> 
           <!-- それぞれのスライドの div 要素 -->
-          <div class="swiper-slide"><img src="../image/140726167640_TP_V4.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../image/DSCF2496_TP_V4.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../image/ELLY863_kara-rihu14091309_TP_V4.jpg" alt=""></div>
         </div>
 
         <!-- ページネーションの div 要素 -->
@@ -266,9 +261,7 @@
         headers:{
           "X-API-KEY": "25c6040c-38a7-4156-81ff-21aabe6c1f94"
         }
-      })
-      .then(res => res.json())
-      .then(json => {
+      }).then(res => res.json()).then(json => {
         // コンテンツの数分、繰り返す（for文）
         // appendの場合、囲むのは丸カッコ→（）
         for(const content of json.contents){
@@ -304,13 +297,14 @@
                   date + 
                 '</p>'+
               '</div>'+
-              '<h2>' + content.title + 
+              '<h2 >' + content.title + 
               '</h2>'+
             '</li>'
           );
         };
       });
     </script>
-
+    <script src="../jquery/portfolio.js"></script>
+    <script src="../jquery/blog.js"></script>
   </body>
 </html>
