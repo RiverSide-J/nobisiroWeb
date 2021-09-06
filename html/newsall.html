@@ -76,62 +76,99 @@
     <!-- ニュース/お知らせページ -->
     <main class="main">
       <section id="newsArea" class="news">
-        <!-- ニュース「タイトル」 -->
-        <div class="newsGroup"></div>
-  
-          <!-- ニュースのお知らせボード -->
-          <!-- microCMSで追加機能を加える -->
-          <div class="newsUnit">
-            <!-- カテゴリと日付 タイトル -->
-            <ul class="newsUnit_menu" id="list"
-             >
-            </ul>
-        </div>
-  
-        <div class="category">
-            <section class="categoryTitle">
-              <h2 class="categoryTitle_Main">カテゴリーで見る</h2>
-              <button class="categoryTitle_Button">すべてみる→</button>
-            </section>
-          <ul class="categoryUnit">
-            <li class="categoryUnit_list">
-              <p class="categoryUnit_listText">カテゴリー1</p>
-            </li>
-            <li class="categoryUnit_List">
-              <p class="categoryUnit_listText">カテゴリー2</p>
-            </li>
-            <li class="categoryUnit_list">
-              <p class="categoryUnit_listText">HTML/CSS</p>
-            </li>
-            <li class="categoryUnit_list">
-              <p class="categoryUnit_listText">JavaScript</p>
-            </li>
-            <li class="categoryUnit_list">
-              <p class="categoryUnit_listText">PHP</p>
-            </li>
-            <li class="categoryUnit_list">
-              <p class="categoryUnit_listText">Firebase</p>
-            </li>
-            <li class="categoryUnit_list">
-              <p class="categoryUnit_listText">GitHub</p>
-            </li>
-            <li class="categoryUnit_list">
-              <p class="categoryUnit_listText">Vercel</p>
-            </li>
-            <li class="categoryUnit_list">
-              <p class="categoryUnit_listText">Visual Studio Code</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
+          <div class="newsContainer">
+            <!-- ニュース「タイトル」 -->
+            <div class="newsGroup"></div>
+      
+              <!-- ニュースのお知らせボード -->
+              <!-- microCMSで追加機能を加える -->
+              <div class="newsUnit">
+                <!-- カテゴリと日付 タイトル -->
+                <ul class="newsUnit_menu" id="list"
+                >
+                </ul>
+            </div>
+      
+            <div class="category">
+                <section class="categoryTitle">
+                  <h2 class="categoryTitle_Main">カテゴリーで見る</h2>
+                  <button class="categoryTitle_Button">すべてみる→</button>
+                </section>
+              <ul class="categoryUnit">
+                <li class="categoryUnit_list">
+                  <button class="categoryUnit_listText">
+                    <a class="categoryUnit_link" href="">
+                      カテゴリー1
+                    </a>
+                  </button>
+                </li>
+                <li class="categoryUnit_List">
+                  <button class="categoryUnit_listText">
+                    <a class="categoryUnit_link" href="">
+                      カテゴリー2
+                    </a>
+                  </button>
+                </li>
+                <li class="categoryUnit_list">
+                  <button class="categoryUnit_listText">
+                    <a class="categoryUnit_link" href="">
+                      HTML/CSS
+                    </a>
+                  </button>
+                </li>
+                <li class="categoryUnit_list">
+                  <button class="categoryUnit_listText">
+                    <a class="categoryUnit_link" href="">
+                      JavaScript
+                    </a>
+                  </button>
+                </li>
+                <li class="categoryUnit_list">
+                  <button class="categoryUnit_listText">
+                    <a class="categoryUnit_link" href="">
+                      PHP
+                    </a>
+                  </button>
+                </li>
+                <li class="categoryUnit_list">
+                  <button class="categoryUnit_listText">
+                    <a class="categoryUnit_link" href="">
+                      Firebase
+                    </a>
+                  </button>
+                </li>
+                <li class="categoryUnit_list">
+                  <button class="categoryUnit_listText">
+                    <a class="categoryUnit_link" href="">
+                      GitHub
+                    </a>
+                  </button>
+                </li>
+                <li class="categoryUnit_list">
+                  <button class="categoryUnit_listText">
+                    <a class="categoryUnit_link" href="">
+                      Vercel
+                    </a>
+                  </button>
+                </li>
+                <li class="categoryUnit_list">
+                  <button class="categoryUnit_listText">
+                    <a class="categoryUnit_link" href="">
+                      Visual Studio Code
+                    </a>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 元のページに戻るボタン -->
+          <button class="moreButton">
+            <a class="moreButton_Cursor" href="index.html">
+              元のページに戻る
+            </a>
+          </button>
+        </section>
     </main>
-    <!-- 元のページに戻るボタン -->
-    <button class="moreButton">
-      <a class="moreButton_Cursor" href="index.html">
-        元のページに戻る
-      </a>
-    </button>
     
 
     <!-- フッター -->
@@ -180,3 +217,6 @@
     <script src="../jquery/category.js"></script>
   </body>
 </html>
+
+<!-- 使うかもしれないプログラム -->
+<!--  -->

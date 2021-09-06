@@ -71,20 +71,7 @@ html {
 .news {
   height: auto;
   width: 100%;
-  padding: 120px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 100px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #5c5c5c;
@@ -138,8 +125,9 @@ html {
 }
 
 .category {
-  width: 305px;
-  height: 125px;
+  width: 290px;
+  margin-right: 15px;
+  border-radius: 5px;
   background-color: #978f8f;
 }
 
@@ -160,6 +148,7 @@ html {
 .categoryTitle_Button {
   margin-top: 1.3px;
   border: none;
+  cursor: pointer;
   text-decoration: underline;
   color: white;
   background-color: rgba(255, 255, 255, 0);
@@ -185,9 +174,26 @@ html {
   padding: 5px;
   font-size: 13px;
   font-weight: bold;
-  margin: 2px;
+  margin: 3px;
+  border: none;
   color: #000000;
   background-color: #C4C4C4;
+}
+
+.newsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .footer {
@@ -278,7 +284,7 @@ html {
   width: 220px;
   height: 50px;
   border-radius: 25px;
-  margin: 0 auto 0 auto;
+  margin: 70px auto 0 auto;
   padding-bottom: 1px;
   display: block;
   text-decoration: none;
