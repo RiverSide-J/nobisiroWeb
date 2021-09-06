@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1204, initial-scale=1.0">
     <!-- ページ先・html -->
-
+    <link rel="stylesheet" href="../html/blogall.html">
+    <link rel="stylesheet" href="../html/newsall.html">
     <!-- css scss -->
     <link rel="stylesheet" href="../scss/styles.css">
     <link rel="stylesheet" href="../css/reset.css">
     <!-- jquery -->
     <script src="../jquery/jquery-3.6.0.min.js"></script>
     
-    <!-- swiper[スライドショー] -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.9/swiper-bundle.min.css" />
-
+    <!-- swiper[スライドショー] -->    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   
     <!-- タイトル -->
     <title>SITE_TITLE</title>
@@ -106,7 +106,7 @@
         </p>
         <!-- ニュース「ボタン」 -->
         <button class="moreButton">
-          <a class="moreButton_Cursor" href="">
+          <a class="moreButton_Cursor" href="newsall.html">
             MORE
           </a>
         </button>
@@ -124,15 +124,13 @@
 
     
     <!-- 実績 -->
-    <section id="portfolidArea" class="portfolio">
-      
+    <section id="portfolidArea" class="portfolioArea">
       <!-- スライドショー 画像一個ずつサイト１ -->
       <!-- スライダーのメインコンテナの div 要素 -->
-      <div class="swiper-container"> 
+      <div class="swiper portfolio"> 
         <!-- ラッパーの（スライドを囲む） div 要素 -->
         <div id="portfolio_list" class="swiper-wrapper"> 
           <!-- それぞれのスライドの div 要素 -->
-          
         </div>
 
         <!-- ページネーションの div 要素 -->
@@ -170,7 +168,7 @@
     </section>
     
     <!-- 記事 -->
-    <section id="blogArea" class="blog">
+    <section id="blogArea" class="blogArea">
       <div class="blogGroup">
         <!-- 記事「タイトル」 -->
         <h5 class="titlePrimary">BLOG</h5>
@@ -187,7 +185,7 @@
       
       <!-- スライドショー 画像一個ずつサイト１ -->
       <!-- スライダーのメインコンテナの div 要素 -->
-      <div class="swiper-container"> 
+      <div class="swiper blog"> 
         <!-- ラッパーの（スライドを囲む） div 要素 -->
         <div id="blog_list" class="swiper-wrapper"> 
           <!-- それぞれのスライドの div 要素 -->
@@ -206,7 +204,7 @@
 
       <!-- 記事「ボタン」 -->
       <button class="moreButton">
-        <a href="">
+        <a href="blogall.html">
         MORE
         </a> 
       </button>
@@ -245,8 +243,7 @@
     </footer>
 
     <!-- swiper関係 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.9/swiper-bundle.min.js"></script>
-    <script src="../jquery/homepage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
 
     <!-- microCMS -->
     <h2 id="title"></h2>

@@ -16,16 +16,19 @@ $(document).ready(function(){
       $("#portfolio_list").append(
         '<li class="swiper-slide">' +
           '<a href="' + url + '">' +
-            '<img src="'+ thumbnail +'" />' +
+            '<img class="portfolioImage" src="'+ thumbnail +'" />' +
             '<h3>' + title + '</h3>' +
           '</a>' +
         '</li>'
       );
     };
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.portfolio', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   });

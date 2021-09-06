@@ -65,71 +65,30 @@ html{
   color: white;
 }
 
-// メイン
-.main{
-  background-color: #000000;
-  &Feature{
-    width: 100%;
-    height: 100vh;
-    &_Button{
-      left: 0;
-      right: 0;
-      bottom: 2.5ex;
-      margin: 0 auto;
-      padding: 0;
-      position: absolute;
-      font-size: 30px;
-      color: white;
-      opacity: 0.6;
-      background: transparent;
-      display: block;
-      // 上下移動アニメーション
-      animation-name: UpUpDownDown;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-duration: 1.5s;
-      &intro{
-        display: block;
-        color: aliceblue;
-        text-decoration: none;
-      }
-    }
-  }
-}
-// アニメーションネーム
-@keyframes UpUpDownDown{
-  0%{
-    transform: translate(0,0px);    
-  }
-  100%{
-    transform: translate(0,-15px);
-  }
-}
-
-// ニュース
+// ニュース/お知らせページ
 .news{
-  width: 100%;
   height: auto;
-  padding: 150px 80px;
+  width: 100%;
+  padding: 120px 0;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  align-items: flex-start;
   align-items: center;
   box-sizing: border-box;
-  text-align: center;
   background: hsl(0, 0%, 36%);
   &Group{
   }
   &Unit{
-    width: 47%;
+    width: 62%;
     height: auto;
     display: flex;
     border:none;
     border-radius: 10px;
-    background-color: white;
+    background-color: #8E8E8E;
     &_menu{
       margin: 0 auto;
-      width: 80%;
+      width: 96%;
       &-Row{
         display: flex;
         align-items: center;
@@ -139,57 +98,69 @@ html{
         // ６番目以外を[border-bottom]を追加
         &:not(:last-child){
           padding: 15px 0;
-          border-bottom: 3px #808080 solid;
+          border-bottom: 1px white solid;
         }
       }
     }
     &_text{
-      font-size: 12px;
+      font-size: 14px;
       font-weight: bold;
       text-decoration: none;
-      color: black;
+      color: #FFFFFF;
+    }
+    &_titleText{
+      font-size: 17px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #FFFFFF;
     }
   }
 }
 
-// 実績
-.portfolioArea{
-  width: 100%;
-  height: auto;
-  padding: 80px 50px;
-  gap: 40px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background: #919191;
-}
+// カテゴリーの編集場所
+// 
+// カテゴリ全体
+//   メインタイトル
+//   ボタン
+//     リスト
+//     リストのテキスト
+.category{
+  width: 305px;
+  height: 125px;
+  background-color: #978f8f;
+  &Title{
+    display: flex;
+    justify-content: space-evenly;
+    &_Main{
+      margin-top: 5.5px;
+      color: white;
+    }
+    &_Button{
+      margin-top: 1.3px;
 
-.portfolio{
-  width: 50%;
-  &Group{
+      border: none;
+      text-decoration: underline;
+      color: white;
+      background-color:rgba(255, 255, 255, 0);
+    }
   }
-}
-
-// ブログ
-.blogArea{
-  width: 100%;
-  height: auto;
-  text-align: center;
-  background: #BCBCBC;
-  padding: 1px;
-}
-
-.blog{
-  &Group{
-    padding-top: 30px;
-  }
-  &Slider{
-    width: auto;
-    height: 150px;
-    margin: 20px 20px;
-    background-color: #C4C4C4;
-    &_title{
+  &Unit{
+    margin: 10px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    &_list{
+      &Text{
+        // border: 2px red solid;
+        padding: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        margin: 2px;
+        color: #000000;
+        background-color: #C4C4C4;
+      }
     }
   }
 }
@@ -275,7 +246,7 @@ html{
   width: 220px;
   height: 50px;
   border-radius: 25px;
-  margin: 40px auto 100px auto;
+  margin: 0 auto 0 auto;
   padding-bottom: 1px;
   display: block;
   text-decoration: none;
@@ -295,31 +266,4 @@ html{
   text-align: start;
   width: fit-content;
   margin: 0 auto;
-}
-
-// スライドショー [swiper]
-.slideTop{
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 15px auto;
-  padding: 20px 20px;
-  border: 3px solid ;
-  font-size: 15px;
-  background-color: #FFFFFF;
-}
-
-.swiper-slide{
-  overflow: hidden;
-}
-.slideImage{
-  width: auto;
-  height: 200px;
-}
-.slideBottom{
-
-}
-
-.portfolioImage{
-  height: 100%;
-  width: 200px;
 }

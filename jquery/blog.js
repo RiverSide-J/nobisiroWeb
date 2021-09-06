@@ -15,17 +15,25 @@ $(document).ready(function(){
       
       $("#blog_list").append(
         '<li class="swiper-slide">' +
-          '<p href="' + category + '">' +
-            '<img src="'+ thumbnail +'" />' +
-            '<h3>' + title + '</h3>' +
-          '</p>' +
+          '<a href="">' +
+            '<h4 class="slideTop">'+ category +'</h4>'+ 
+            '<img class="slideImage" src="'+ thumbnail +'" />' +
+            '<h3 class="">' + title + '</h3>' +
+          '</a>' +
         '</li>'
       );
     };
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.blog', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   });

@@ -44,7 +44,7 @@ $(document).ready(function(){
               date + 
             '</p>'+
           '</div>'+
-          '<h2 >' + 
+          '<h2 class="newsUnit_titleText">' + 
             content.title + 
           '</h2>'+
         '</li>'

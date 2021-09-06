@@ -68,6 +68,10 @@ html{
 // メイン
 .main{
   background-color: #000000;
+  &Title{
+    font-size: 20px;
+    color: red;
+  }
   &Feature{
     width: 100%;
     height: 100vh;
@@ -117,7 +121,7 @@ html{
   align-items: center;
   box-sizing: border-box;
   text-align: center;
-  background: hsl(0, 0%, 36%);
+  background: rgba(255, 255, 255, 0.5);
   &Group{
   }
   &Unit{
@@ -148,48 +152,6 @@ html{
       font-weight: bold;
       text-decoration: none;
       color: black;
-    }
-  }
-}
-
-// 実績
-.portfolioArea{
-  width: 100%;
-  height: auto;
-  padding: 80px 50px;
-  gap: 40px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  background: #919191;
-}
-
-.portfolio{
-  width: 50%;
-  &Group{
-  }
-}
-
-// ブログ
-.blogArea{
-  width: 100%;
-  height: auto;
-  text-align: center;
-  background: #BCBCBC;
-  padding: 1px;
-}
-
-.blog{
-  &Group{
-    padding-top: 30px;
-  }
-  &Slider{
-    width: auto;
-    height: 150px;
-    margin: 20px 20px;
-    background-color: #C4C4C4;
-    &_title{
     }
   }
 }
@@ -295,31 +257,4 @@ html{
   text-align: start;
   width: fit-content;
   margin: 0 auto;
-}
-
-// スライドショー [swiper]
-.slideTop{
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 15px auto;
-  padding: 20px 20px;
-  border: 3px solid ;
-  font-size: 15px;
-  background-color: #FFFFFF;
-}
-
-.swiper-slide{
-  overflow: hidden;
-}
-.slideImage{
-  width: auto;
-  height: 200px;
-}
-.slideBottom{
-
-}
-
-.portfolioImage{
-  height: 100%;
-  width: 200px;
 }
