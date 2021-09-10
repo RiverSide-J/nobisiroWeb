@@ -75,11 +75,27 @@
 
     <!-- ニュース/お知らせページ -->
     <main class="main">
+      <!-- ページの全体 -->
       <section id="newsArea" class="news">
+        <!-- パンくずリスト -->
+        <div class="bread">
+          <ul class="breadUnit">
+            <li class="breadUnit_list">
+              <a class="breadUnit_listLink" href="">
+                SITE_TITLE >
+              </a>
+            </li>
+            <li class="breadUnit_list">
+              <a class="breadUnit_listLink" href="">
+                お知らせ : すべて
+              </a>
+            </li>
+          </ul>
+        </div>
+          <!-- 記事一覧 -->
+          <!-- ニュース「タイトル」 -->
           <div class="newsContainer">
-            <!-- ニュース「タイトル」 -->
             <div class="newsGroup"></div>
-      
               <!-- ニュースのお知らせボード -->
               <!-- microCMSで追加機能を加える -->
               <div class="newsUnit">
@@ -88,7 +104,7 @@
                 >
                 </ul>
             </div>
-      
+            <!-- カテゴリ一覧 -->
             <div class="category">
                 <section class="categoryTitle">
                   <h2 class="categoryTitle_Main">カテゴリーで見る</h2>
@@ -161,10 +177,45 @@
               </ul>
             </div>
           </div>
+          <!-- ページネーション -->
+          <ul class="example">
+              <li class="exampleList">
+                <a class="exampleList_link sidebutton" href="">
+                  前へ
+                </a>
+              </li>
+              <li class="exampleList">
+                <a class="exampleList_link" href="">
+                  1
+                </a>
+              </li>
+              <li class="exampleList">
+                <a class="exampleList_link checkedbutton" href="">
+                  2
+                </a>
+              </li>
+              <li class="exampleList">
+                <a class="exampleList_link" href="">
+                  3
+                </a>
+              </li>
+              <li class="exampleList">
+                <a class="exampleList_link sidebutton" href="">
+                  次へ
+                </a>
+              </li>
+            </ul>
           <!-- 元のページに戻るボタン -->
           <button class="moreButton">
             <a class="moreButton_Cursor" href="index.html">
               元のページに戻る
+            </a>
+          </button>
+
+          <!-- 制作中の記事ページのボタン -->
+          <button class="moreButton">
+            <a class="moreButton_Cursor" href="blogall.html">
+              制作中の記事ページへ
             </a>
           </button>
         </section>

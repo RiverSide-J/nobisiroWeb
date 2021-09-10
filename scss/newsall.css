@@ -68,10 +68,35 @@ html {
   color: white;
 }
 
+.breadUnit {
+  font: 17.5px;
+  margin: 0 0 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.breadUnit_list {
+  color: #FFFFFF;
+}
+
+.breadUnit_list:nth-child(2) {
+  color: #ccc7c7;
+}
+
+.breadUnit_listLink {
+  padding: 5px;
+}
+
+.breadUnit_listLink:hover {
+  background-color: azure;
+}
+
 .news {
   height: auto;
   width: 100%;
-  padding: 100px 0;
+  padding: 70px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #5c5c5c;
@@ -178,6 +203,35 @@ html {
   border: none;
   color: #000000;
   background-color: #C4C4C4;
+}
+
+.example {
+  width: 62%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.exampleList_link {
+  padding: 20px;
+  margin-top: 50px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+
+.sidebutton {
+  background-color: #acaaaa;
+}
+
+.checkedbutton {
+  background-color: red;
 }
 
 .newsContainer {

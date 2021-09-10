@@ -11,6 +11,7 @@ html{
   height: 100%;
 }
 
+
 // ヘッダー
 .header{ 
   width: 100%;
@@ -65,95 +66,16 @@ html{
   color: white;
 }
 
-// メイン
 .main{
-  background-color: #000000;
-  &Title{
-    font-size: 20px;
-    color: red;
-  }
-  &Feature{
-    width: 100%;
-    height: 100vh;
-    &_Button{
-      left: 0;
-      right: 0;
-      bottom: 2.5ex;
-      margin: 0 auto;
-      padding: 0;
-      position: absolute;
-      font-size: 30px;
-      color: white;
-      opacity: 0.6;
-      background: transparent;
-      display: block;
-      // 上下移動アニメーション
-      animation-name: UpUpDownDown;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-duration: 1.5s;
-      &intro{
-        display: block;
-        color: aliceblue;
-        text-decoration: none;
-      }
-    }
-  }
-}
-// アニメーションネーム
-@keyframes UpUpDownDown{
-  0%{
-    transform: translate(0,0px);    
-  }
-  100%{
-    transform: translate(0,-15px);
-  }
+  width: auto;
+  height: 100%;
+  background-color: #5B5B5B;
 }
 
-// ニュース
-.news{
-  width: 100%;
-  height: auto;
-  padding: 150px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.5);
-  &Group{
-  }
-  &Unit{
-    width: 47%;
-    height: auto;
-    display: flex;
-    border:none;
-    border-radius: 10px;
-    background-color: white;
-    &_menu{
-      margin: 0 auto;
-      width: 80%;
-      &-Row{
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        gap: 20px;
-        padding: 15px 0;
-        // ６番目以外を[border-bottom]を追加
-        &:not(:last-child){
-          padding: 15px 0;
-          border-bottom: 3px #808080 solid;
-        }
-      }
-    }
-    &_text{
-      font-size: 12px;
-      font-weight: bold;
-      text-decoration: none;
-      color: black;
-    }
-  }
+.blogall{
+  width: auto;
+  height: 500px;
+  background-color: #5B5B5B;
 }
 
 // フッター

@@ -65,11 +65,32 @@ html{
   color: white;
 }
 
+.bread{
+  &Unit{
+    font: 17.5px;
+    margin:0 0 5px 20px;
+    display: flex;
+    list-style-type: none;
+    &_list{
+      color: #FFFFFF;
+      &:nth-child(2){
+        color: rgb(204, 199, 199);
+      }
+      &Link{
+        padding: 5px;
+        &:hover{
+          background-color: azure;
+        }
+      }
+    }
+  }
+}
+
 // ニュース/お知らせページ
 .news{
   height: auto;
   width: 100%;
-  padding: 100px 0;
+  padding: 70px 0;
   box-sizing: border-box;
   background: hsl(0, 0%, 36%);
   &Group{
@@ -160,6 +181,32 @@ html{
       }
     }
   }
+}
+
+// ページネーション
+.example{
+  width: 62%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+  &List{
+    &_link{
+      padding: 20px;
+      margin-top: 50px;
+      display: block;
+      box-sizing: border-box;
+      background-color: #FFFFFF;
+
+    }
+  }
+}
+.sidebutton{
+  background-color: rgb(172, 170, 170);
+}
+
+.checkedbutton{
+ background-color: red;
 }
 
 // newsのflex関係

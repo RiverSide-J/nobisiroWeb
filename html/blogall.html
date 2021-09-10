@@ -74,55 +74,126 @@
       </ul>
     </header>
 
-    <main  class="main">
-      <div class="mainFeature">
-        
-        <!-- タイトル下の文章 -->
-        <!-- ボタンを押すとニュースに移動 -->
-        <button class="mainFeature_Button">
-          <a class="mainFeature_Buttonintro" href="#newsArea">
-            scroll
-            <br>
-            ↓
-          </a>
-        </button>
-
-      </div>
-    </main>
-
-    <!-- ニュース -->
-    <section id="newsArea" class="news">
-      <!-- ニュース「タイトル」 -->
-      <div class="newsGroup">
-      </div>
-
-        <!-- ニュースのお知らせボード -->
-        <!-- microCMSで追加機能を加える -->
-        <div class="newsUnit">
-          <!-- カテゴリと日付 タイトル -->
-          <ul class="newsUnit_menu" id="list"
-            >
+    <main class="main">
+      <section class="blogall">
+        <!-- パンくずリスト -->
+        <div>
+          <!-- ニュースオールから流用（パンくずリスト） -->
+          <!-- 日時 -->
+          <p></p>
+          <!-- カテゴリ１・２ -->
+          <ul>
+            <li>
+              <a href="">
+  
+              </a>
+            </li>
+            <li>
+              <a href="">
+  
+              </a>
+            </li>
           </ul>
+          <!-- タイトル -->
+          <h2></h2>
+          <!-- 本文 -->
         </div>
+        <!-- 記事本体 -->
+        <div>
 
-        <!-- スライダーのメインコンテナの div 要素 -->
-       <div class="swiper news"> 
-        <!-- ラッパーの（スライドを囲む） div 要素 -->
-        <div id="portfolio_list" class="swiper-wrapper"> 
-          <!-- それぞれのスライドの div 要素 -->
         </div>
+        <div>
 
-        <!-- ページネーションの div 要素 -->
-        <div class="swiper-pagination"></div>
-
-        <!-- ナビゲーションボタンの div 要素-->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- スクロールバーの div 要素 -->
-        <div class="swiper-scrollbar"></div>
-    </section>
-
+        </div>
+        <!-- カテゴリとお知らせ -->
+        <section>
+            <!-- カテゴリ一覧 -->
+            <div class="category">
+              <section class="categoryTitle">
+                <h2 class="categoryTitle_Main">カテゴリーで見る</h2>
+                <button class="categoryTitle_Button">すべてみる→</button>
+              </section>
+            <ul class="categoryUnit">
+              <li class="categoryUnit_list">
+                <button class="categoryUnit_listText">
+                  <a class="categoryUnit_link" href="">
+                    カテゴリー1
+                  </a>
+                </button>
+              </li>
+              <li class="categoryUnit_List">
+                <button class="categoryUnit_listText">
+                  <a class="categoryUnit_link" href="">
+                    カテゴリー2
+                  </a>
+                </button>
+              </li>
+              <li class="categoryUnit_list">
+                <button class="categoryUnit_listText">
+                  <a class="categoryUnit_link" href="">
+                    HTML/CSS
+                  </a>
+                </button>
+              </li>
+              <li class="categoryUnit_list">
+                <button class="categoryUnit_listText">
+                  <a class="categoryUnit_link" href="">
+                    JavaScript
+                  </a>
+                </button>
+              </li>
+              <li class="categoryUnit_list">
+                <button class="categoryUnit_listText">
+                  <a class="categoryUnit_link" href="">
+                    PHP
+                  </a>
+                </button>
+              </li>
+              <li class="categoryUnit_list">
+                <button class="categoryUnit_listText">
+                  <a class="categoryUnit_link" href="">
+                    Firebase
+                  </a>
+                </button>
+              </li>
+              <li class="categoryUnit_list">
+                <button class="categoryUnit_listText">
+                  <a class="categoryUnit_link" href="">
+                    GitHub
+                  </a>
+                </button>
+              </li>
+              <li class="categoryUnit_list">
+                <button class="categoryUnit_listText">
+                  <a class="categoryUnit_link" href="">
+                    Vercel
+                  </a>
+                </button>
+              </li>
+              <li class="categoryUnit_list">
+                <button class="categoryUnit_listText">
+                  <a class="categoryUnit_link" href="">
+                    Visual Studio Code
+                  </a>
+                </button>
+              </li>
+            </ul>
+          </div>
+            <!-- 記事一覧 -->
+          <!-- ニュース「タイトル」 -->
+          <div class="newsContainer">
+            <div class="newsGroup"></div>
+              <!-- ニュースのお知らせボード -->
+              <!-- microCMSで追加機能を加える -->
+              <div class="newsUnit">
+                <!-- カテゴリと日付 タイトル -->
+                <ul class="newsUnit_menu" id="list"
+                >
+                </ul>
+            </div>
+        </section>
+      </section>
+    </main>
 
     <!-- フッター -->
     <footer id="footerArea" class="footer">
@@ -149,12 +220,6 @@
           </li>
         </ul>
       </div>
-      <!-- 元のページに戻るボタン -->
-      <button class="moreButton">
-        <a class="moreButton_Cursor" href="index.html">
-          元のページに戻る
-        </a>
-      </button>
 
       <!-- フッター「著作権マーク」 -->
       <h3 class="footerSecondary">
