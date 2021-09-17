@@ -53,7 +53,7 @@ html{
   width: 220px;
   height: 50px;
   border-radius: 25px;
-  margin: 70px auto 0 auto;
+  margin: 40px auto 100px auto;
   padding-bottom: 1px;
   display: block;
   text-decoration: none;
@@ -74,6 +74,8 @@ html{
   width: fit-content;
   margin: 0 auto;
 }
+
+
 
 // ヘッダー
 .header{ 
@@ -129,12 +131,27 @@ html{
   color: white;
 }
 
+.main{
+  width: auto;
+  height: 100%;
+  background-color: #5B5B5B;
+}
+
+.blogall{
+  width: auto;
+  height: 500px;
+  background-color: #5B5B5B;
+}
+
+// パンくずリスト[bread]
+// 
 .bread{
   &Unit{
-    font: 17.5px;
-    margin:0 0 5px 20px;
+    font: 17px;
+    margin:0 0 5px;
     display: flex;
     list-style-type: none;
+    padding: 110px 0px 0px 50px;
     &_list{
       color: #FFFFFF;
       &:nth-child(2){
@@ -149,66 +166,73 @@ html{
     }
   }
 }
-
-// ニュース/お知らせページ
-.news{
-  height: auto;
-  width: 100%;
-  padding: 70px 0;
-  box-sizing: border-box;
-  background: hsl(0, 0%, 36%);
-  &Group{
+.articleUnit{
+  width: 530px;
+  padding-right: 20px;
+  &_day{
+    padding: 10px 5px;
+    font-weight: 100;
+    text-align: left;
   }
-  &Unit{
-    width: 62%;
-    height: auto;
+  &_wrap{
     display: flex;
-    border:none;
-    border-radius: 10px;
-    background-color: #8E8E8E;
-    &_menu{
-      margin: 0 auto;
-      width: 96%;
-      &-Row{
-        display: flex;
-        text-decoration: none;
-        gap: 20px;
-        padding: 15px 0;
-        // ６番目以外を[border-bottom]を追加
-        &:not(:last-child){
-          padding: 15px 0;
-          border-bottom: 1px white solid;
-        }
+    &List{
+      margin: 5px;
+      padding: 15px 0;
+      font-size: 15px;
+      display: flex;
+      text-decoration: none;
+      background-color: #C4C4C4;
+
+      &-link{
+        padding: 0 20px;
       }
     }
-    &_text{
-      font-size: 14px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #FFFFFF;
-    }
-    &_titleText{
-      font-size: 17px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #FFFFFF;
+  }
+  &_image{
+
+  }
+  &_title{
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    color: #FFFFFF;
+
+  }
+  &_content{
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    overflow:hidden;
+    color: #FFFFFF;
+    &:last-child{
+      line-height: 80px;
     }
   }
 }
 
-// カテゴリーの編集場所
-// 
+.mainWrapper{
+  background-color: #808080;
+}
+
+// カテゴリとお知らせページ セット
+.secondaryArea{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
 // カテゴリ全体
 //   メインタイトル
 //   ボタン
 //     リスト
 //     リストのテキスト
 .category{
-  width: 290px;
-  margin-right: 15px;
-  // margin: 0 15px 100px 0;
-  border-radius: 5px;
-  background-color: #978f8f;
+  width: 310px;
+  margin: 10px auto;
   &Title{
     display: flex;
     justify-content: space-evenly;
@@ -246,44 +270,59 @@ html{
   }
 }
 
-// ページネーション
-.example{
-  width: 62%;
+// ニュース/お知らせページ[news]
+.news{
+  width: 100%;
+  height: auto;
+  padding: 0 60px 0 60px;
   display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 10px;
-  &List{
-    &_link{
-      padding: 20px;
-      margin-top: 50px;
-      display: block;
-      box-sizing: border-box;
-      background-color: #FFFFFF;
-
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  text-align: center;
+  background: hsl(0, 0%, 36%);
+  &Group{
+  }
+  &Unit{
+    width: 96%;
+    height: auto;
+    margin:10px auto;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    &_menu{
+      width: 95%;
+      margin: 0 auto;
+      &-Row{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 10px;
+        padding: 15px 0;
+        // ６番目以外を[border-bottom]を追加
+        &:not(:last-child){
+          padding: 20px 0;
+          border-bottom: 2px #808080 solid;
+        }
+      }
+    }
+    &_text{
+      font-size: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+    &_titleText{
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
     }
   }
 }
-.sidebutton{
-  background-color: rgb(172, 170, 170);
-}
 
-.checkedbutton{
- background-color: red;
-}
-
-// newsのflex関係
-.newsContainer{
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: flex-start;
-  align-items: end;
-}
-
-// newsのリンク設定
-.categoryUnit_link{
-  
+.categoryGroup{
+  background-color:#8E8E8ECC;
 }
 
 // フッター

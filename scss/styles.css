@@ -50,24 +50,6 @@ html {
   text-align: center;
 }
 
-.headerPortfolid {
-  font-size: 11px;
-  font-weight: bold;
-  color: white;
-}
-
-.headerBlog {
-  font-size: 11px;
-  font-weight: bold;
-  color: white;
-}
-
-.headerNews {
-  font-size: 11px;
-  font-weight: bold;
-  color: white;
-}
-
 .main {
   background-color: #000000;
 }
@@ -127,6 +109,14 @@ html {
     -webkit-transform: translate(0, -15px);
             transform: translate(0, -15px);
   }
+}
+
+.hamburger_toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
 }
 
 .news {
@@ -362,5 +352,181 @@ html {
 .portfolioImage {
   height: 100%;
   width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 85%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerTitle {
+    color: powderblue;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+  }
+  .headerTitle:hover {
+    color: gold;
+  }
+  .headerMenu {
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .headerMenu_item {
+    float: left;
+    margin: 0 45px 0 0;
+    text-align: center;
+  }
+  .headerPortfolid {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  }
+  .headerBlog {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  }
+  .headerNews {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  }
+  .main {
+    background-color: #000000;
+  }
+  .mainFeature {
+    width: 100%;
+    height: 100vh;
+  }
+  .mainFeature_Button {
+    left: 0;
+    right: 0;
+    bottom: 2.5ex;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    opacity: 0.6;
+    background: transparent;
+    display: block;
+    -webkit-animation-name: UpUpDownDown;
+            animation-name: UpUpDownDown;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+  }
+  .mainFeature_Buttonintro {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  @-webkit-keyframes UpUpDownDown {
+    0% {
+      -webkit-transform: translate(0, 0px);
+              transform: translate(0, 0px);
+    }
+    100% {
+      -webkit-transform: translate(0, -15px);
+              transform: translate(0, -15px);
+    }
+  }
+  @keyframes UpUpDownDown {
+    0% {
+      -webkit-transform: translate(0, 0px);
+              transform: translate(0, 0px);
+    }
+    100% {
+      -webkit-transform: translate(0, -15px);
+              transform: translate(0, -15px);
+    }
+  }
+  .headerPortfolid {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  }
+  .headerBlog {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  }
+  .headerNews {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  }
+  .hamburger_toggle {
+    width: 50px;
+    height: 30px;
+    display: block;
+    position: relative;
+  }
+  .hamburger_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #333;
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    transition: opacity .5s, -webkit-transform .5s;
+    transition: transform .5s, opacity .5s;
+    transition: transform .5s, opacity .5s, -webkit-transform .5s;
+  }
+  .hamburger_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .hamburger_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hamburger_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+  .hamburger_toggle.show i:nth-child(1) {
+    -webkit-transform: translateY(35px) rotate(-20deg);
+            transform: translateY(35px) rotate(-20deg);
+  }
+  .hamburger_toggle.show i:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger_toggle.show i:nth-child(3) {
+    -webkit-transform: translateY(-30px) rotate(25deg);
+            transform: translateY(-30px) rotate(25deg);
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .5s, visibility .5s;
+    transition: opacity .5s, visibility .5s;
+  }
+  .hamburgerUnit {
+    text-align: center;
+  }
+  .hamburger.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .headerMenu {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

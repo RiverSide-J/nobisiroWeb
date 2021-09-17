@@ -48,23 +48,6 @@ html{
     }
 }
 
-.headerPortfolid{
-  font-size: 11px;
-  font-weight: bold;
-  color: white;
-
-}
-.headerBlog{
-  font-size: 11px;
-  font-weight: bold;
-  color: white;
-}
-.headerNews{
-  font-size: 11px;
-  font-weight: bold;
-  color: white;
-}
-
 // メイン
 .main{
   background-color: #000000;
@@ -105,6 +88,14 @@ html{
   100%{
     transform: translate(0,-15px);
   }
+}
+
+.hamburger_toggle{
+  display: none;
+}
+
+.hamburger{
+  display: none;
 }
 
 // ニュース
@@ -322,4 +313,177 @@ html{
 .portfolioImage{
   height: 100%;
   width: 200px;
+}
+
+@media screen and (max-width: 768px){
+  // ヘッダー
+  .header{ 
+    max-width: 85%;
+    flex-direction: column;
+      &Title{
+        
+        // ホバー[文字色が変化]
+        color: powderblue;
+        transition: color .2s;
+        &:hover{
+          color: gold;
+        }
+      }
+
+      &Menu{
+        font-size: 20px;
+        list-style: none;
+        display: inline-block;
+        vertical-align: middle;
+          &_item{
+            float: left;
+            margin: 0 45px 0 0;
+            text-align: center;
+          }
+      }
+  }
+
+  .headerPortfolid{
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+
+  }
+  .headerBlog{
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  }
+  .headerNews{
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  }
+
+  // メイン
+  .main{
+    background-color: #000000;
+    &Feature{
+      width: 100%;
+      height: 100vh;
+      &_Button{
+        left: 0;
+        right: 0;
+        bottom: 2.5ex;
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        opacity: 0.6;
+        background: transparent;
+        display: block;
+        // 上下移動アニメーション
+        animation-name: UpUpDownDown;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 1.5s;
+        &intro{
+          display: block;
+          color: aliceblue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  // アニメーションネーム
+  @keyframes UpUpDownDown{
+    0%{
+      transform: translate(0,0px);    
+    }
+    100%{
+      transform: translate(0,-15px);
+    }
+  }
+
+  .headerPortfolid{
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  
+  }
+  .headerBlog{
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  }
+  .headerNews{
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  // ハンバーガーメニュー[ボタン]
+  .hamburger_toggle{
+    width: 50px;
+    height: 30px;
+    display: block;
+    position: relative;
+  }
+  .hamburger_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #333;
+    transition: transform .5s, opacity .5s;
+  }
+  // ハンバーガーメニューの[i]の設定
+  .hamburger_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .hamburger_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hamburger_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+  // クリック後のアニメーション
+  .hamburger_toggle.show i:nth-child(1) {
+    transform: translateY(35px) rotate(-20deg);
+  }
+  .hamburger_toggle.show i:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger_toggle.show i:nth-child(3) {
+    transform: translateY(-30px) rotate(25deg);
+  }
+  
+  
+  // ハンバーガーメニュー[本体]
+  .hamburger{
+    display: block;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    &Unit{
+      text-align: center;
+      &_link{
+        
+      }
+    }
+  }
+  // ハンバーガーメニュー[本体]：アニメーション
+  .hamburger.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .headerMenu{
+    display: none;
+  }
 }

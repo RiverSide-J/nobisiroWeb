@@ -11,69 +11,6 @@ html{
   height: 100%;
 }
 
-// 共通クラス名一覧
-// 
-// headerのタイトル関係
-.commonPrimary{
-  font-weight: bold;
-  font-size: 20px;  
-  text-decoration: none;
-  color: white;
-  // ホバー[文字色が変化]
-  color: powderblue;
-  transition: color .2s;
-  &:hover{
-    color: gold;
-  }
-}
-
-.commonSecondary{
-  font-size: 14px;
-  text-decoration: none;
-  color: white;
-  // ホバー[文字色が変化]
-  color: powderblue;
-  transition: color .2s;
-  &:hover{
-    color: gold;
-  }
-}
-
-// （primary/secondary)
-.titlePrimary{
-  font-size: 30px;
-}
-.titleSecondary{
-  line-height: 1.5;
-  font-size: 60px;
-}
-
-// ボタン関係
-.moreButton{
-  width: 220px;
-  height: 50px;
-  border-radius: 25px;
-  margin: 70px auto 0 auto;
-  padding-bottom: 1px;
-  display: block;
-  text-decoration: none;
-  font-weight: bold;
-  background-color: #EBEBEB;
-  
-  &_Cursor{
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-
-// 説明文
-.info{
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: start;
-  width: fit-content;
-  margin: 0 auto;
-}
 
 // ヘッダー
 .header{ 
@@ -129,6 +66,20 @@ html{
   color: white;
 }
 
+.main{
+  width: auto;
+  height: 100%;
+  background-color: #5B5B5B;
+}
+
+.blogall{
+  width: auto;
+  height: 500px;
+  background-color: #5B5B5B;
+}
+
+// パンくずリスト[bread]
+// 
 .bread{
   &Unit{
     font: 17.5px;
@@ -149,55 +100,56 @@ html{
     }
   }
 }
-
-// ニュース/お知らせページ
-.news{
-  height: auto;
-  width: 100%;
-  padding: 70px 0;
-  box-sizing: border-box;
-  background: hsl(0, 0%, 36%);
-  &Group{
+.articleUnit{
+  height: 500px;
+  width: 500px;
+  padding-right: 20px;
+  background-color: #8E8E8E;
+  &_day{
+    text-align: left;
   }
-  &Unit{
-    width: 62%;
-    height: auto;
+  &_wrap{
     display: flex;
-    border:none;
-    border-radius: 10px;
-    background-color: #8E8E8E;
-    &_menu{
-      margin: 0 auto;
-      width: 96%;
-      &-Row{
-        display: flex;
-        text-decoration: none;
-        gap: 20px;
-        padding: 15px 0;
-        // ６番目以外を[border-bottom]を追加
-        &:not(:last-child){
-          padding: 15px 0;
-          border-bottom: 1px white solid;
-        }
+    &List{
+      height: 10px;
+      margin: 5px;
+      font-size: 15px;
+      padding: 15px 0;
+      display: flex;
+      text-decoration: none;
+      border: 1px red solid;
+      background-color: azure;
+
+      &-link{
+
       }
     }
-    &_text{
-      font-size: 14px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #FFFFFF;
-    }
-    &_titleText{
-      font-size: 17px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #FFFFFF;
-    }
+  }
+  &_title{
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  &_content{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
   }
 }
 
-// カテゴリーの編集場所
-// 
+.mainWrapper{
+  padding-right: 20px;
+}
+
+// カテゴリとお知らせページ セット
+.secondaryArea{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
 // カテゴリ全体
 //   メインタイトル
 //   ボタン
@@ -205,10 +157,8 @@ html{
 //     リストのテキスト
 .category{
   width: 290px;
-  margin-right: 15px;
-  // margin: 0 15px 100px 0;
+  margin: 10px auto;
   border-radius: 5px;
-  background-color: #978f8f;
   &Title{
     display: flex;
     justify-content: space-evenly;
@@ -246,44 +196,63 @@ html{
   }
 }
 
-// ページネーション
-.example{
-  width: 62%;
+// ニュース/お知らせページ[news]
+.news{
+  width: 100%;
+  height: auto;
+  padding: 150px 80px;
   display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 10px;
-  &List{
-    &_link{
-      padding: 20px;
-      margin-top: 50px;
-      display: block;
-      box-sizing: border-box;
-      background-color: #FFFFFF;
-
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  background: hsl(0, 0%, 36%);
+  &Group{
+  }
+  &Unit{
+    width: 96%;
+    height: auto;
+    margin:10px auto;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    &_menu{
+      width: 95%;
+      margin: 0 auto;
+      &-Row{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 10px;
+        padding: 15px 0;
+        // ６番目以外を[border-bottom]を追加
+        &:not(:last-child){
+          padding: 20px 0;
+          border-bottom: 2px #808080 solid;
+        }
+      }
+    }
+    &_text{
+      font-size: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+    &_titleText{
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
     }
   }
 }
-.sidebutton{
-  background-color: rgb(172, 170, 170);
-}
 
-.checkedbutton{
- background-color: red;
-}
-
-// newsのflex関係
-.newsContainer{
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: flex-start;
-  align-items: end;
-}
-
-// newsのリンク設定
-.categoryUnit_link{
-  
+// カテゴリなどの右側
+// 
+.categoryGroup{
+  width: 320px;
+  height: auto;
+  background-color: #978f8f;
 }
 
 // フッター
@@ -323,4 +292,68 @@ html{
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
   }
+}
+
+// 共通クラス名一覧
+// 
+// headerのタイトル関係
+.commonPrimary{
+  font-weight: bold;
+  font-size: 20px;  
+  text-decoration: none;
+  color: white;
+  // ホバー[文字色が変化]
+  color: powderblue;
+  transition: color .2s;
+  &:hover{
+    color: gold;
+  }
+}
+
+.commonSecondary{
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  // ホバー[文字色が変化]
+  color: powderblue;
+  transition: color .2s;
+  &:hover{
+    color: gold;
+  }
+}
+
+// （primary/secondary)
+.titlePrimary{
+  font-size: 30px;
+}
+.titleSecondary{
+  line-height: 1.5;
+  font-size: 60px;
+}
+
+// ボタン関係
+.moreButton{
+  width: 220px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 40px auto 100px auto;
+  padding-bottom: 1px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #EBEBEB;
+  
+  &_Cursor{
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+// 説明文
+.info{
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: start;
+  width: fit-content;
+  margin: 0 auto;
 }

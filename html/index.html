@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1204, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ページ先・html -->
     <link rel="stylesheet" href="../html/blogall.html">
     <link rel="stylesheet" href="../html/newsall.html">
@@ -28,11 +28,11 @@
       <!-- 右側のメニュー -->
       <ul class="headerMenu">
         <li class="headerMenu_item">
-          <a class="commonSecondary" href="#">
+          <a class="commonSecondary hamburgerHead" href="#">
             HOME
           </a>
           <br>
-          <a class="commonPrimary" href="#">
+          <a class="commonPrimary hamburgerFoot" href="#">
             ホーム
           </a>
         </li>
@@ -75,6 +75,51 @@
           </a>
         </li>
       </ul>
+      <!-- ハンバーガーメニュー hamburgermenu -->
+      <span class="hamburger_toggle" id="hamburger_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+      <nav class="hamburger" id="hamburger">
+        <ul class="hamburgerUnit">
+          <li class="hamburgerUnit_link">
+            <a class="commonSecondary" href="#">
+              HOME
+            </a>
+            <br>
+            <a class="commonPrimary" href="#">
+              ホーム
+            </a>
+          </li>
+            <a class="commonSecondary" href="#newsArea">
+              NEWS
+            </a>
+            <br>
+            <a class="commonPrimary" href="#newsArea">
+              お知らせ
+            </a>
+          </li>
+          <li class="hamburgerUnit_link">
+            <a class="commonSecondary" href="#portfolidArea">
+              PORTFOLID
+            </a>
+            <br>
+            <a class="commonPrimary" href="#portfolidArea">
+              実績
+            </a>
+          </li>
+          <li class="hamburgerUnit_link">
+            <a class="commonSecondary" href="#blogArea">
+              BLOG
+            </a>
+            <br>
+            <a class="commonPrimary" href="#blogArea">
+              記事
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main  class="main">
@@ -255,5 +300,8 @@
     <script src="../jquery/news.js"></script>
     <script src="../jquery/portfolio.js"></script>
     <script src="../jquery/blog.js"></script>
+
+    <!-- ハンバーガーメニュー -->
+    <script src="../jquery/hamburgermenu.js"></script>
   </body>
 </html>

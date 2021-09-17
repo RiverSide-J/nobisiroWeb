@@ -180,3 +180,188 @@ html{
   width: fit-content;
   margin: 0 auto;
 }
+
+// パンくずリスト
+// 
+.bread{
+  padding-top: 50px;
+  &Unit{
+    font: 17.5px;
+    margin:0 0 5px 20px;
+    display: flex;
+    list-style-type: none;
+    &_list{
+      color: #FFFFFF;
+      &:nth-child(3){
+        color: rgb(204, 199, 199);
+      }
+      &Link{
+        padding: 5px;
+        &:hover{
+          background-color: azure;
+        }
+      }
+    }
+  }
+}
+
+// カテゴリとお知らせページ セット
+.secondaryArea{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+// カテゴリ全体
+//   メインタイトル
+//   ボタン
+//     リスト
+//     リストのテキスト
+.category{
+  width: 290px;
+  margin-right: 15px;
+  // margin: 0 15px 100px 0;
+  border-radius: 5px;
+  background-color: #978f8f;
+  &Title{
+    display: flex;
+    justify-content: space-evenly;
+    &_Main{
+      margin-top: 5.5px;
+      color: white;
+    }
+    &_Button{
+      margin-top: 1.3px;
+      border: none;
+      cursor: pointer;
+      text-decoration: underline;
+      color: white;
+      background-color:rgba(255, 255, 255, 0);
+    }
+  }
+  &Unit{
+    margin: 10px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    &_list{
+      &Text{
+        padding: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        margin: 3px;
+        border: none;
+        color: #000000;
+        background-color: #C4C4C4;
+      }
+    }
+  }
+}
+
+// ニュース/お知らせページ
+.news{
+  height: auto;
+  width: 100%;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background: hsl(0, 0%, 36%);
+  &Group{
+  }
+  &Unit{
+    width: 62%;
+    height: auto;
+    display: flex;
+    border:none;
+    border-radius: 10px;
+    background-color: #8E8E8E;
+    &_menu{
+      margin: 0 auto;
+      width: 96%;
+      &-Row{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 20px;
+        padding: 15px 0;
+        // ６番目以外を[border-bottom]を追加
+        &:not(:last-child){
+          padding: 15px 0;
+          border-bottom: 1px white solid;
+        }
+      }
+    }
+    &_text{
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+    &_titleText{
+      font-size: 17px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+  }
+}
+
+
+.articleArea{
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #BCBCBC;
+  &_main{
+    width: 350px;
+    height: 350px;
+    background-color: #837d7d;
+    
+  }
+  &_wrap{
+    &Link{
+      &-announce{
+
+      }
+      &-day{
+
+      }
+      &-img{
+
+      }
+    }
+    &Button{
+      &-src{
+
+      }
+    }
+  }
+}
+
+// ページネーション
+.example{
+  width: 62%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+  &List{
+    &_link{
+      padding: 20px;
+      margin-top: 50px;
+      display: block;
+      box-sizing: border-box;
+      background-color: #FFFFFF;
+
+    }
+  }
+}
+.sidebutton{
+  background-color: rgb(172, 170, 170);
+}
+
+.checkedbutton{
+ background-color: red;
+}
+

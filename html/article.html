@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>newsall</title>
+    <title>article</title>
     <!-- css scss -->
-    <link rel="stylesheet" href="../scss/newsall.css">
+    <link rel="stylesheet" href="../scss/article.css">
     <link rel="stylesheet" href="../css/reset.css">
     <!-- jquery -->
     <script src="../jquery/jquery-3.6.0.min.js"></script>
@@ -77,35 +77,56 @@
     <main class="main">
       <!-- ページの全体 -->
       <section id="newsArea" class="news">
-        <!-- パンくずリスト -->
-        <div class="bread">
-          <ul class="breadUnit">
-            <li class="breadUnit_list">
-              <a class="breadUnit_listLink" href="">
-                SITE_TITLE >
-              </a>
-            </li>
-            <li class="breadUnit_list">
-              <a class="breadUnit_listLink" href="">
-                お知らせ : すべて
-              </a>
-            </li>
-          </ul>
-        </div>
-          <!-- 記事一覧 -->
-          <!-- ニュース「タイトル」 -->
-          <div class="newsContainer">
-            <div class="newsGroup"></div>
-              <!-- ニュースのお知らせボード -->
-              <!-- microCMSで追加機能を加える -->
-              <div class="newsUnit">
-                <!-- カテゴリと日付 タイトル -->
-                <ul class="newsUnit_menu" id="list"
-                >
-                </ul>
-            </div>
-            <!-- カテゴリ一覧 -->
-            <div class="category">
+        <div class="mainWrapper">
+          <!-- パンくずリスト[bread] -->
+          <div class="bread">
+            <ul class="breadUnit">
+              <li class="breadUnit_list">
+                <a class="breadUnit_listLink" href="">
+                  SITE_TITLE >
+                </a>
+              </li>
+              <li class="breadUnit_list">
+                <a class="breadUnit_listLink" href="">
+                  記事 >
+                </a>
+              </li>
+              <li class="breadUnit_list">
+                <a class="breadUnit_listLink" href="">
+                  記事タイトル
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 記事本文と全体 [articleUnit] -->
+          <section class="articleUnit">
+            <h2 class="articleUnit_day">
+              2021/07/04 21:31 投稿
+            </h2>
+            <ul class="articleUnit_wrap">
+              <li class="articleUnit_wrapList">
+                <a class="articleUnit_wrapList-link" href="">
+                  カテゴリ1
+                </a>
+              </li>
+              <li class="articleUnit_wrapList">
+                <a class="articleUnit_wrapList-link" href="">
+                  カテゴリ2
+                </a>
+              </li>
+            </ul>
+            <img class="articleUnit_image" src="" alt="">
+            <h1 class="articleUnit_title">タイトルタイトルタイトルタイトルタイトルタイトル</h1>
+            <p class="articleUnit_content">
+              ここに本文が入ります。ここに本文が入ります
+              ここに本文が入ります。ここに本文が入ります
+              
+              ここに本文が入ります。ここに本文が入ります
+            </p>
+          </section>
+          <section class="categoryGroup">
+            <!-- カテゴリ一覧[category] -->
+            <div class="category category_news">
                 <section class="categoryTitle">
                   <h2 class="categoryTitle_Main">カテゴリーで見る</h2>
                   <button class="categoryTitle_Button">すべてみる→</button>
@@ -176,49 +197,49 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <!-- ページネーション -->
-          <ul class="example">
-              <li class="exampleList">
-                <a class="exampleList_link sidebutton" href="">
-                  前へ
-                </a>
-              </li>
-              <li class="exampleList">
-                <a class="exampleList_link" href="">
-                  1
-                </a>
-              </li>
-              <li class="exampleList">
-                <a class="exampleList_link checkedbutton" href="">
-                  2
-                </a>
-              </li>
-              <li class="exampleList">
-                <a class="exampleList_link" href="">
-                  3
-                </a>
-              </li>
-              <li class="exampleList">
-                <a class="exampleList_link sidebutton" href="">
-                  次へ
-                </a>
-              </li>
-            </ul>
-          <!-- 元のページに戻るボタン -->
-          <button class="moreButton">
-            <a class="moreButton_Cursor" href="index.html">
-              元のページに戻る
-            </a>
-          </button>
+  
+            <!-- ニュースのお知らせボード -->
+              <!-- microCMSで追加機能を加える -->
+              <div class="columnUnit">
+                <section class="categoryTitle">
+                  <h2 class="categoryTitle_Main">最新のお知らせ</h2>
+                  <button class="categoryTitle_Button">もっとみる→</button>
+                </section>
+                <ul class="columnUnit_area">
+                  <li class="columnUnit_areaList">
+                    <button class="columnUnit-areaList_button">
+                      <a class="columnUnit-areaList_buttonSrc" href="">カテゴリ</a>
+                    </button>
+                    <img class="columnUnit-areaImage" src="" alt="">
+                    <h1 class="columnUnit-areaTitle">サイト1</h1>
+                  </li>
+                  <li class="columnUnit-areaList">
+                    <button class="columnUnit-areaList_button">
+                      <a class="columnUnit-areaList_buttonSrc" href="">カテゴリ</a>
+                    </button>
+                    <img class="columnUnit-areaImage" src="" alt="">
+                    <h1 class="columnUnit-areaTitle">サイト1</h1>
+                  </li>
+                  <li class="columnUnit-areaList">
+                    <button class="columnUnit-areaList_botton">
+                      <a class="columnUnit-areaList_buttonSrc" href="">カテゴリ</a>
+                    </button>
+                    <img class="columnUnit-areaImage" src="" alt="">
+                    <h1 class="columnUnit-areaTitle">サイト1</h1>
+                  </li>
+                </ul>
+              </div>
+          </section>
+        </div>
 
-          <!-- 制作中の記事ページのボタン -->
-          <button class="moreButton">
-            <a class="moreButton_Cursor"  href="newstitle.html">
-              制作中の記事ページへ
-            </a>
-          </button>
-        </section>
+
+        <!-- 元のページに戻るボタン -->
+        <button class="moreButton">
+          <a class="moreButton_Cursor" href="index.html">
+            元のページに戻る
+          </a>
+        </button>
+      </section>
     </main>
     
 
@@ -264,7 +285,6 @@
 
     <p id="body"></p>
     <!-- microCMSの各種スクリプト -->
-    <script src="../jquery/news.js"></script>
     <script src="../jquery/category.js"></script>
   </body>
 </html>
