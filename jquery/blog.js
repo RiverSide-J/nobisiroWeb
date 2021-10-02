@@ -24,7 +24,7 @@ $(document).ready(function(){
       );
     };
     var swiper = new Swiper('.blog', {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
       pagination: {
@@ -35,6 +35,16 @@ $(document).ready(function(){
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      breakpoints: {
+        // 768px以上の場合
+        768: {
+          slidesPerView: 2,
+        },
+        // 980px以上の場合
+        980: {
+          slidesPerView: 3,
+        },
+      }
     });
   });
 });

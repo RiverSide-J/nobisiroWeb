@@ -31,12 +31,12 @@ $(document).ready(function(){
 
       // それぞれサイト上に出力したい形にする
       // 年・月・日・：「分」の順で並べる[カスタム可能]
-      date = year + '年' + manth + '月' + now + '日 ' + hour + ':' + minutes;
+      date = manth + '月' + now + '日 ' + hour + ':' + minutes;
 
       // 日時・カテゴリ・タイトル
       $("#list").append(
         '<li class="newsUnit_menu-Row">' +
-          '<div>'+
+          '<div class="newsUnit_menu-Rowlead">'+
             '<p class="newsUnit_text">' + 
               content.category + 
             '</p>'+

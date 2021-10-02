@@ -159,7 +159,6 @@ html{
   width: 220px;
   height: 50px;
   border-radius: 25px;
-  margin: 40px auto 100px auto;
   padding-bottom: 1px;
   display: block;
   text-decoration: none;
@@ -220,7 +219,6 @@ html{
 .category{
   width: 290px;
   margin-right: 15px;
-  // margin: 0 15px 100px 0;
   border-radius: 5px;
   background-color: #978f8f;
   &Title{
@@ -260,78 +258,40 @@ html{
   }
 }
 
-// ニュース/お知らせページ
-.news{
-  height: auto;
-  width: 100%;
-  padding: 70px 0;
-  box-sizing: border-box;
-  background: hsl(0, 0%, 36%);
-  &Group{
-  }
-  &Unit{
-    width: 62%;
-    height: auto;
-    display: flex;
-    border:none;
-    border-radius: 10px;
-    background-color: #8E8E8E;
-    &_menu{
-      margin: 0 auto;
-      width: 96%;
-      &-Row{
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        gap: 20px;
-        padding: 15px 0;
-        // ６番目以外を[border-bottom]を追加
-        &:not(:last-child){
-          padding: 15px 0;
-          border-bottom: 1px white solid;
-        }
-      }
-    }
-    &_text{
-      font-size: 14px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #FFFFFF;
-    }
-    &_titleText{
-      font-size: 17px;
-      font-weight: bold;
-      text-decoration: none;
-      color: #FFFFFF;
-    }
-  }
-}
-
-
 .articleArea{
-  width: auto;
+  width: 800px;
   height: 100%;
-  margin: 0 auto;
+  margin: 50px 50px;
   background-color: #BCBCBC;
-  &_main{
-    width: 350px;
-    height: 350px;
-    background-color: #837d7d;
-    
+  &Wrapper{
+
+  }
+  &_Toc{
+    width: auto;
+    height: 100%;
+    display: flex;
+    margin: 25px 25px;
+    :nth-last-child(){
+      margin-bottom: 20px;
+    }
   }
   &_wrap{
     &Link{
-      &-announce{
+      list-style: none;
+      &-btn{
 
       }
       &-day{
 
       }
       &-img{
-
+        width: 100px;
+        height: 100px;
       }
     }
     &Button{
+      border: none;
+      background: none;
       &-src{
 
       }

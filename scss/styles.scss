@@ -120,13 +120,16 @@ html{
     background-color: white;
     &_menu{
       margin: 0 auto;
-      width: 80%;
+      width: 95%;
       &-Row{
         display: flex;
         align-items: center;
         text-decoration: none;
         gap: 20px;
         padding: 15px 0;
+        &lead{
+          width: 105px;
+        }
         // ６番目以外を[border-bottom]を追加
         &:not(:last-child){
           padding: 15px 0;
@@ -278,6 +281,9 @@ html{
     cursor: pointer;
   }
 }
+.moreButtonsp{
+display: none;
+}
 
 // 説明文
 .info{
@@ -297,6 +303,7 @@ html{
   border: 3px solid ;
   font-size: 15px;
   background-color: #FFFFFF;
+  
 }
 
 .swiper-slide{
@@ -315,21 +322,60 @@ html{
   width: 200px;
 }
 
-@media screen and (max-width: 768px){
+// iPhone10〜からのスマホ対応
+@media screen and (max-width: 375px){  
+  .hamburgerTop{
+    font-size: 25px;
+  }
+  .hamburgerBottom{
+    font-size: 30px;
+    line-height: 1.3;  
+  }
+
+  
+  // （primary/secondary)
+  .titlePrimary{
+    font-size: 45px;
+  }
+  .titleSecondary{
+    font-size: 68px;
+  }
+  // 説明文
+  .info{
+    font-size: 17px;
+  }
+
+  // ボタン関係
+  .moreButton{
+    display: none;
+  }
+
+  .moreButtonsp{
+    width: 220px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 40px auto 20px auto;
+    padding-bottom: 1px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #EBEBEB;
+    order: 3;
+    &_Cursorsp{
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
   // ヘッダー
   .header{ 
     max-width: 85%;
     flex-direction: column;
       &Title{
-        
-        // ホバー[文字色が変化]
-        color: powderblue;
-        transition: color .2s;
-        &:hover{
-          color: gold;
-        }
+        top: 70px;
+        left: 15px;
+        position: fixed;
       }
-
       &Menu{
         font-size: 20px;
         list-style: none;
@@ -359,6 +405,82 @@ html{
     font-weight: bold;
     color: white;
   }
+
+    // ハンバーガーメニュー[ボタン]
+    .hamburger_toggle{
+      width: 50px;
+      height: 30px;
+      display: block;
+      position: fixed;
+      right: 35px;
+      top: 70px;
+      z-index: 1000;
+    }
+    .hamburger_toggle i {
+      display: block;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      background-color: #333;
+      transition: transform .5s, opacity .5s;
+    }
+    // ハンバーガーメニューの[i]の設定
+    .hamburger_toggle i:nth-child(1) {
+      top: 0;
+    }
+    .hamburger_toggle i:nth-child(2) {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .hamburger_toggle i:nth-child(3) {
+      bottom: 0;
+    }
+    // クリック後のアニメーション
+    .hamburger_toggle.show i:nth-child(1) {
+      transform: translateY(14.5px) rotate(-45deg);
+    }
+    .hamburger_toggle.show i:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger_toggle.show i:nth-child(3) {
+      transform: translateY(-14.5px) rotate(45deg);
+    }
+  
+    // ハンバーガーメニュー[本体]
+    .hamburger{
+      display: block;
+      position: fixed;
+      top: 3rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .5s, visibility .5s;
+      background-color: rgba(101, 116, 222, 0.8);
+      &Unit{
+        margin-top: 90px;
+        text-align: center;
+        &_link{
+          margin-top: 20px;
+        }
+      }
+    }
+    // ハンバーガーメニュー[本体]：アニメーション
+    .hamburger.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .headerMenu{
+      display: none;
+    }
+
+    .hamburger_toggle i{
+      background: linear-gradient(90deg,#fc3e31 0%,#f2dc26 100%);
+    }
 
   // メイン
   .main{
@@ -418,72 +540,77 @@ html{
     font-weight: bold;
     color: white;
   }
-  
-  // ハンバーガーメニュー[ボタン]
-  .hamburger_toggle{
-    width: 50px;
-    height: 30px;
-    display: block;
-    position: relative;
-  }
-  .hamburger_toggle i {
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    background-color: #333;
-    transition: transform .5s, opacity .5s;
-  }
-  // ハンバーガーメニューの[i]の設定
-  .hamburger_toggle i:nth-child(1) {
-    top: 0;
-  }
-  .hamburger_toggle i:nth-child(2) {
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
-  .hamburger_toggle i:nth-child(3) {
-    bottom: 0;
-  }
-  // クリック後のアニメーション
-  .hamburger_toggle.show i:nth-child(1) {
-    transform: translateY(35px) rotate(-20deg);
-  }
-  .hamburger_toggle.show i:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger_toggle.show i:nth-child(3) {
-    transform: translateY(-30px) rotate(25deg);
-  }
-  
-  
-  // ハンバーガーメニュー[本体]
-  .hamburger{
-    display: block;
-    position: fixed;
-    top: 3rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 1rem;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s, visibility .5s;
+
+  // ニュース 
+  .news{
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    &Group{
+      margin: 0 auto 30px;
+    }
     &Unit{
-      text-align: center;
-      &_link{
-        
+      width: 100%;
+      height: auto;
+      display: flex;
+      border:none;
+      border-radius: 10px;
+      background-color: white;
+      &_menu{
+        &-Row{
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          gap: 20px;
+          padding: 15px 0;
+          // ６番目以外を[border-bottom]を追加
+          &:not(:last-child){
+            padding: 15px 0;
+            border-bottom: 3px #808080 solid;
+          }
+        }
+      }
+      &_text{
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
       }
     }
   }
-  // ハンバーガーメニュー[本体]：アニメーション
-  .hamburger.show {
-    opacity: 1;
-    visibility: visible;
+
+  // 実績
+  .portfolioArea{
+    flex-wrap: wrap;
   }
 
-  .headerMenu{
-    display: none;
+  .portfolio{
+    width: 100%;
+    order: 2;
+  }
+
+  .slideTop{
+    padding: 17px 10px;
+  }
+  // フッター
+  .footer{
+    padding: 20px 20px 10px;
+    &Group{
+      flex-wrap: wrap;
+      &_Main{
+        margin: 0.1em 1em 0.9em 0;
+        font-size: 30px;
+      }
+      &_Menu{
+        gap: 20px
+
+      }
+    }
+    &Secondary{
+      padding: 15px 5px 0;
+      font-size: 15px;
+    }
+  }
+  .swiper-button-next, .swiper-button-prev{
+    top: 80%;
   }
 }

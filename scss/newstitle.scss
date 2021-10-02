@@ -53,7 +53,7 @@ html{
   width: 220px;
   height: 50px;
   border-radius: 25px;
-  margin: 40px auto 100px auto;
+  margin: 40px auto 0;
   padding-bottom: 1px;
   display: block;
   text-decoration: none;
@@ -167,7 +167,7 @@ html{
   }
 }
 .articleUnit{
-  width: 530px;
+  width: 720px;
   padding-right: 20px;
   &_day{
     padding: 10px 5px;
@@ -274,13 +274,16 @@ html{
 .news{
   width: 100%;
   height: auto;
-  padding: 0 60px 0 60px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   box-sizing: border-box;
-  text-align: center;
+  padding: 0 60px 20px 60px;
   background: hsl(0, 0%, 36%);
+  &Wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: center;
+  }
   &Group{
   }
   &Unit{

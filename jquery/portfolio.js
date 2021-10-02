@@ -23,9 +23,9 @@ $(document).ready(function(){
       );
     };
     var swiper = new Swiper('.portfolio', {
+      loop: true,
       slidesPerView: 1,
       spaceBetween: 20,
-      loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
