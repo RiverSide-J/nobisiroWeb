@@ -78,44 +78,6 @@ html{
   background-color: #5B5B5B;
 }
 
-// フッター
-.footer{
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  padding: 50px 20px 20px;
-  background-color: #000000;
-  &Group{
-    display: flex;
-    border-bottom: 2px #BCBCBC solid;
-    justify-content: space-around;
-
-    &_Main{
-      margin: 0.1em 1em 0.9em 0;
-      font-size: 60px;
-      color: rgba(255, 255, 255, 0.3);
-      // 色変化アニメーション
-      transition: color .2s;
-      &:hover{
-        color: gold;
-      }
-    }
-    &_Menu{
-      margin: 27px 0 0 0;
-      gap: 20px;
-      font-size: 20px;
-      list-style: none;
-      display: flex;
-      color: #BCBCBC;
-    }
-  }
-  &Secondary{
-    padding: 15px 0 0;
-    font-size: 15px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.3);
-  }
-}
 
 // 共通クラス名一覧
 // 
@@ -152,6 +114,7 @@ html{
 .titleSecondary{
   line-height: 1.5;
   font-size: 60px;
+  
 }
 
 // ボタン関係
@@ -160,6 +123,7 @@ html{
   height: 50px;
   border-radius: 25px;
   padding-bottom: 1px;
+  margin: 0 auto;
   display: block;
   text-decoration: none;
   font-weight: bold;
@@ -202,6 +166,58 @@ html{
       }
     }
   }
+}
+
+// メイン
+// 記事三つずつに並べる
+.articleArea{
+  width: 700px;
+  margin: 0 50px;
+  padding: 60px 20px;
+  background-color: #BCBCBC;
+  &Wrapper{
+
+  }
+  &_Toc{
+    display: flex;
+    margin: 25px 25px;
+  }
+  &_wrap{
+    width: 200px;
+    &Link{
+      width: 100%;
+      height: auto;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      &-btn{
+
+      }
+      &-day{
+
+      }
+      &-img{
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &Button{
+      border: none;
+      background: none;
+      &-src{
+
+      }
+    }
+  }
+}
+
+// blogallのflex関係
+.blogallContainer{
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
 }
 
 // カテゴリとお知らせページ セット
@@ -258,50 +274,10 @@ html{
   }
 }
 
-.articleArea{
-  width: 800px;
-  height: 100%;
-  margin: 50px 50px;
-  background-color: #BCBCBC;
-  &Wrapper{
-
-  }
-  &_Toc{
-    width: auto;
-    height: 100%;
-    display: flex;
-    margin: 25px 25px;
-    :nth-last-child(){
-      margin-bottom: 20px;
-    }
-  }
-  &_wrap{
-    &Link{
-      list-style: none;
-      &-btn{
-
-      }
-      &-day{
-
-      }
-      &-img{
-        width: 100px;
-        height: 100px;
-      }
-    }
-    &Button{
-      border: none;
-      background: none;
-      &-src{
-
-      }
-    }
-  }
-}
-
 // ページネーション
 .example{
   width: 62%;
+  padding-bottom: 50px;
   display: flex;
   list-style: none;
   justify-content: center;
@@ -325,3 +301,41 @@ html{
  background-color: red;
 }
 
+// フッター
+.footer{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 50px 20px 20px;
+  background-color: #000000;
+  &Group{
+    display: flex;
+    border-bottom: 2px #BCBCBC solid;
+    justify-content: space-around;
+
+    &_Main{
+      margin: 0.1em 1em 0.9em 0;
+      font-size: 60px;
+      color: rgba(255, 255, 255, 0.3);
+      // 色変化アニメーション
+      transition: color .2s;
+      &:hover{
+        color: gold;
+      }
+    }
+    &_Menu{
+      margin: 27px 0 0 0;
+      gap: 20px;
+      font-size: 20px;
+      list-style: none;
+      display: flex;
+      color: #BCBCBC;
+    }
+  }
+  &Secondary{
+    padding: 15px 0 0;
+    font-size: 15px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
