@@ -157,8 +157,8 @@ html{
 //     リストのテキスト
 .category{
   width: 290px;
-  margin: 10px auto;
   border-radius: 5px;
+  background-color: #978f8f;
   &Title{
     display: flex;
     justify-content: space-evenly;
@@ -196,56 +196,59 @@ html{
   }
 }
 
-// ニュース/お知らせページ[news]
-.news{
-  width: 100%;
-  height: auto;
-  padding: 150px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  text-align: center;
-  background: hsl(0, 0%, 36%);
-  &Group{
+.columnArea{
+  width: auto;
+  height: 100%;
+  background-color: #978f8f;
+  &_Toc{
+    padding: 10px 0px 15px;
   }
-  &Unit{
-    width: 96%;
-    height: auto;
-    margin:10px auto;
-    display: flex;
-    border-radius: 10px;
-    background-color: white;
-    &_menu{
-      width: 95%;
-      margin: 0 auto;
-      &-Row{
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        gap: 10px;
-        padding: 15px 0;
-        // ６番目以外を[border-bottom]を追加
-        &:not(:last-child){
-          padding: 20px 0;
-          border-bottom: 2px #808080 solid;
+  &_wrap{
+    width: auto;
+    &List{
+      width: 100%;
+      height: auto;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      &-btn{
+       &Src{
+
+       } 
+      }
+      &-image{
+        width: 50px;
+        height: 50px;
+      }
+      &-button{
+        border: none;
+        background: none;
+        &Src{
         }
       }
     }
-    &_text{
-      font-size: 10px;
-      font-weight: bold;
-      text-decoration: none;
-      color: black;
-    }
-    &_titleText{
-      font-size: 12px;
-      font-weight: bold;
-      text-decoration: none;
-      color: black;
-    }
   }
 }
+
+.categoryTitle{
+  &_main{
+
+  }
+  &_button{
+
+  }
+}
+
+// articleのflex関係
+.articleContainer{
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
+}
+
+
 
 // カテゴリなどの右側
 // 
@@ -336,7 +339,7 @@ html{
   width: 220px;
   height: 50px;
   border-radius: 25px;
-  margin: 40px auto 100px auto;
+  margin: 40px auto 0;
   padding-bottom: 1px;
   display: block;
   text-decoration: none;

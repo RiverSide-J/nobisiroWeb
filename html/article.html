@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>article</title>
+    <title>article記事</title>
     <!-- css scss -->
     <link rel="stylesheet" href="../scss/article.css">
     <link rel="stylesheet" href="../css/reset.css">
@@ -98,147 +98,174 @@
               </li>
             </ul>
           </div>
-          <!-- 記事本文と全体 [articleUnit] -->
-          <section class="articleUnit">
-            <h2 class="articleUnit_day">
-              2021/07/04 21:31 投稿
-            </h2>
-            <ul class="articleUnit_wrap">
-              <li class="articleUnit_wrapList">
-                <a class="articleUnit_wrapList-link" href="">
-                  カテゴリ1
-                </a>
-              </li>
-              <li class="articleUnit_wrapList">
-                <a class="articleUnit_wrapList-link" href="">
-                  カテゴリ2
-                </a>
-              </li>
-            </ul>
-            <img class="articleUnit_image" src="" alt="">
-            <h1 class="articleUnit_title">タイトルタイトルタイトルタイトルタイトルタイトル</h1>
-            <p class="articleUnit_content">
-              ここに本文が入ります。ここに本文が入ります
-              ここに本文が入ります。ここに本文が入ります
-              
-              ここに本文が入ります。ここに本文が入ります
-            </p>
-          </section>
-          <section class="categoryGroup">
-            <!-- カテゴリ一覧[category] -->
-            <div class="category category_news">
-                <section class="categoryTitle">
-                  <h2 class="categoryTitle_Main">カテゴリーで見る</h2>
-                  <button class="categoryTitle_Button">すべてみる→</button>
-                </section>
-              <ul class="categoryUnit">
-                <li class="categoryUnit_list">
-                  <button class="categoryUnit_listText">
-                    <a class="categoryUnit_link" href="">
-                      カテゴリー1
-                    </a>
-                  </button>
+          <div class="articleContainer">
+            <!-- 記事本文と全体 [articleUnit] -->
+            <section class="articleUnit">
+              <h2 class="articleUnit_day">
+                2021/07/04 21:31 投稿
+              </h2>
+              <ul class="articleUnit_wrap">
+                <li class="articleUnit_wrapList">
+                  <a class="articleUnit_wrapList-link" href="">
+                    カテゴリ1
+                  </a>
                 </li>
-                <li class="categoryUnit_List">
-                  <button class="categoryUnit_listText">
-                    <a class="categoryUnit_link" href="">
-                      カテゴリー2
-                    </a>
-                  </button>
-                </li>
-                <li class="categoryUnit_list">
-                  <button class="categoryUnit_listText">
-                    <a class="categoryUnit_link" href="">
-                      HTML/CSS
-                    </a>
-                  </button>
-                </li>
-                <li class="categoryUnit_list">
-                  <button class="categoryUnit_listText">
-                    <a class="categoryUnit_link" href="">
-                      JavaScript
-                    </a>
-                  </button>
-                </li>
-                <li class="categoryUnit_list">
-                  <button class="categoryUnit_listText">
-                    <a class="categoryUnit_link" href="">
-                      PHP
-                    </a>
-                  </button>
-                </li>
-                <li class="categoryUnit_list">
-                  <button class="categoryUnit_listText">
-                    <a class="categoryUnit_link" href="">
-                      Firebase
-                    </a>
-                  </button>
-                </li>
-                <li class="categoryUnit_list">
-                  <button class="categoryUnit_listText">
-                    <a class="categoryUnit_link" href="">
-                      GitHub
-                    </a>
-                  </button>
-                </li>
-                <li class="categoryUnit_list">
-                  <button class="categoryUnit_listText">
-                    <a class="categoryUnit_link" href="">
-                      Vercel
-                    </a>
-                  </button>
-                </li>
-                <li class="categoryUnit_list">
-                  <button class="categoryUnit_listText">
-                    <a class="categoryUnit_link" href="">
-                      Visual Studio Code
-                    </a>
-                  </button>
+                <li class="articleUnit_wrapList">
+                  <a class="articleUnit_wrapList-link" href="">
+                    カテゴリ2
+                  </a>
                 </li>
               </ul>
-            </div>
-  
-            <!-- ニュースのお知らせボード -->
-              <!-- microCMSで追加機能を加える -->
-              <div class="columnUnit">
-                <section class="categoryTitle">
-                  <h2 class="categoryTitle_Main">最新のお知らせ</h2>
-                  <button class="categoryTitle_Button">もっとみる→</button>
-                </section>
-                <ul class="columnUnit_area">
-                  <li class="columnUnit_areaList">
-                    <button class="columnUnit-areaList_button">
-                      <a class="columnUnit-areaList_buttonSrc" href="">カテゴリ</a>
+              <img class="articleUnit_image" src="" alt="">
+              <h1 class="articleUnit_title">タイトルタイトルタイトルタイトルタイトルタイトル</h1>
+              <p class="articleUnit_content">
+                ここに本文が入ります。ここに本文が入ります
+                ここに本文が入ります。ここに本文が入ります
+                
+                ここに本文が入ります。ここに本文が入ります
+              </p>
+            </section>
+            <div class="secondaryContainer">
+              <!-- カテゴリ一覧[category] -->
+              <div class="category category_news">
+                  <section class="categoryTitle">
+                    <h2 class="categoryTitle_Main">カテゴリーで見る</h2>
+                    <button class="categoryTitle_Button">すべてみる→</button>
+                  </section>
+                <ul class="categoryUnit">
+                  <li class="categoryUnit_list">
+                    <button class="categoryUnit_listText">
+                      <a class="categoryUnit_link" href="">
+                        カテゴリー1
+                      </a>
                     </button>
-                    <img class="columnUnit-areaImage" src="" alt="">
-                    <h1 class="columnUnit-areaTitle">サイト1</h1>
                   </li>
-                  <li class="columnUnit-areaList">
-                    <button class="columnUnit-areaList_button">
-                      <a class="columnUnit-areaList_buttonSrc" href="">カテゴリ</a>
+                  <li class="categoryUnit_List">
+                    <button class="categoryUnit_listText">
+                      <a class="categoryUnit_link" href="">
+                        カテゴリー2
+                      </a>
                     </button>
-                    <img class="columnUnit-areaImage" src="" alt="">
-                    <h1 class="columnUnit-areaTitle">サイト1</h1>
                   </li>
-                  <li class="columnUnit-areaList">
-                    <button class="columnUnit-areaList_botton">
-                      <a class="columnUnit-areaList_buttonSrc" href="">カテゴリ</a>
+                  <li class="categoryUnit_list">
+                    <button class="categoryUnit_listText">
+                      <a class="categoryUnit_link" href="">
+                        HTML/CSS
+                      </a>
                     </button>
-                    <img class="columnUnit-areaImage" src="" alt="">
-                    <h1 class="columnUnit-areaTitle">サイト1</h1>
+                  </li>
+                  <li class="categoryUnit_list">
+                    <button class="categoryUnit_listText">
+                      <a class="categoryUnit_link" href="">
+                        JavaScript
+                      </a>
+                    </button>
+                  </li>
+                  <li class="categoryUnit_list">
+                    <button class="categoryUnit_listText">
+                      <a class="categoryUnit_link" href="">
+                        PHP
+                      </a>
+                    </button>
+                  </li>
+                  <li class="categoryUnit_list">
+                    <button class="categoryUnit_listText">
+                      <a class="categoryUnit_link" href="">
+                        Firebase
+                      </a>
+                    </button>
+                  </li>
+                  <li class="categoryUnit_list">
+                    <button class="categoryUnit_listText">
+                      <a class="categoryUnit_link" href="">
+                        GitHub
+                      </a>
+                    </button>
+                  </li>
+                  <li class="categoryUnit_list">
+                    <button class="categoryUnit_listText">
+                      <a class="categoryUnit_link" href="">
+                        Vercel
+                      </a>
+                    </button>
+                  </li>
+                  <li class="categoryUnit_list">
+                    <button class="categoryUnit_listText">
+                      <a class="categoryUnit_link" href="">
+                        Visual Studio Code
+                      </a>
+                    </button>
                   </li>
                 </ul>
               </div>
-          </section>
+    
+              <!-- ニュースのお知らせボード -->
+                <!-- microCMSで追加機能を加える -->
+                <div class="columnArea">
+                  <section class="categoryTitle">
+                    <h2 class="categoryTitle_main">最新のお知らせ</h2>
+                    <button class="categoryTitle_button">もっとみる→</button>
+                  </section>
+                  <section class="columnArea_Toc">
+                    <ul class="columnArea_wrap">
+                      <li class="columnArea_wrapList">
+                        <button class="columnArea_wrapList-btn">
+                          <a class="columnArea_wrapList-btnSrc" href="">
+                            カテゴリ
+                          </a>
+                        </button>
+                        <img class="columnArea_wrapList-image" src="../image/party_table.png" alt="">  
+                      </li>
+                      <button class="columnArea_wrapList-button">
+                        <a class="columnArea_wrapList-buttonSrc" href="">
+                          サイト１
+                        </a>
+                      </button>
+                    </ul>
+                    <ul class="columnArea_wrap">
+                      <li class="columnArea_wrapList">
+                        <button class="columnArea_wrapList-btn">
+                          <a class="columnArea_wrapList-buttonSrc" href="">
+                            カテゴリ
+                          </a>
+                        </button>
+                        <img class="columnArea_wrapList-image" src="../image/party_table.png" alt="">  
+                      </li>
+                      <button class="columnArea_wrapList-button">
+                        <a class="columnArea_wrapList-buttonSrc" href="">
+                          サイト１
+                        </a>
+                      </button>
+                    </ul>
+                    <ul class="columnArea_wrap">
+                      <li class="columnArea_wrapList">
+                        <button class="columnArea_wrapList-btn">
+                          <a class="columnArea_wrapList-buttonSrc" href="">
+                            カテゴリ
+                          </a>
+                        </button>
+                        <img class="columnArea_wrapList-image" src="../image/party_table.png" alt="">  
+                      </li>
+                      <button class="columnArea_wrapList-button">
+                        <a class="columnArea_wrapList-buttonSrc" href="">
+                          サイト１
+                        </a>
+                      </button>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+          </div>
+
         </div>
       </section>
+      <!-- 元のページに戻るボタン -->
+      <button class="moreButton">
+        <a class="moreButton_Cursor" href="index.html">
+          元のページに戻る
+        </a>
+      </button>
     </main>
-    <!-- 元のページに戻るボタン -->
-    <button class="moreButton">
-      <a class="moreButton_Cursor" href="index.html">
-        元のページに戻る
-      </a>
-    </button>
     
 
     <!-- フッター -->

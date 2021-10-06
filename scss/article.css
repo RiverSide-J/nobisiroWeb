@@ -161,8 +161,8 @@ html {
 
 .category {
   width: 290px;
-  margin: 10px auto;
   border-radius: 5px;
+  background-color: #978f8f;
 }
 
 .categoryTitle {
@@ -214,70 +214,56 @@ html {
   background-color: #C4C4C4;
 }
 
-.news {
+.columnArea {
+  width: auto;
+  height: 100%;
+  background-color: #978f8f;
+}
+
+.columnArea_Toc {
+  padding: 10px 0px 15px;
+}
+
+.columnArea_wrap {
+  width: auto;
+}
+
+.columnArea_wrapList {
   width: 100%;
   height: auto;
-  padding: 150px 80px;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.columnArea_wrapList-image {
+  width: 50px;
+  height: 50px;
+}
+
+.columnArea_wrapList-button {
+  border: none;
+  background: none;
+}
+
+.articleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
-  background: #5c5c5c;
-}
-
-.newsUnit {
-  width: 96%;
-  height: auto;
-  margin: 10px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.newsUnit_menu {
-  width: 95%;
-  margin: 0 auto;
-}
-
-.newsUnit_menu-Row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  gap: 10px;
-  padding: 15px 0;
-}
-
-.newsUnit_menu-Row:not(:last-child) {
-  padding: 20px 0;
-  border-bottom: 2px #808080 solid;
-}
-
-.newsUnit_text {
-  font-size: 10px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-
-.newsUnit_titleText {
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .categoryGroup {
@@ -374,7 +360,7 @@ html {
   width: 220px;
   height: 50px;
   border-radius: 25px;
-  margin: 40px auto 100px auto;
+  margin: 40px auto 0;
   padding-bottom: 1px;
   display: block;
   text-decoration: none;
