@@ -145,7 +145,7 @@ html {
 
 .breadUnit {
   font: 17px;
-  margin: 0 0 5px;
+  margin: 0 0 5px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,8 +170,7 @@ html {
 }
 
 .articleUnit {
-  width: 720px;
-  padding-right: 20px;
+  width: 900px;
 }
 
 .articleUnit_day {
@@ -188,7 +187,7 @@ html {
 
 .articleUnit_wrapList {
   margin: 5px;
-  padding: 15px 0;
+  padding: 10px 0;
   font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;

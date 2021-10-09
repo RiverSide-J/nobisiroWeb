@@ -138,6 +138,10 @@ html {
   background: #5c5c5c;
 }
 
+.newsGroup {
+  margin-left: 150px;
+}
+
 .newsUnit {
   width: 47%;
   height: auto;
@@ -185,7 +189,7 @@ html {
 .portfolioArea {
   width: 100%;
   height: auto;
-  padding: 80px 50px;
+  padding: 80px 90px;
   gap: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,7 +346,7 @@ html {
   width: -webkit-fit-content;
   width: fit-content;
   margin: 15px auto;
-  padding: 20px 20px;
+  padding: 15px 20px;
   border: 3px solid;
   font-size: 15px;
   background-color: #FFFFFF;

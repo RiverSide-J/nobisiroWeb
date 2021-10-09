@@ -148,7 +148,7 @@ html{
 .bread{
   &Unit{
     font: 17px;
-    margin:0 0 5px;
+    margin: 0 0 5px 10px;
     display: flex;
     list-style-type: none;
     padding: 110px 0px 0px 50px;
@@ -167,8 +167,7 @@ html{
   }
 }
 .articleUnit{
-  width: 720px;
-  padding-right: 20px;
+  width: 900px;
   &_day{
     padding: 10px 5px;
     font-weight: 100;
@@ -178,7 +177,7 @@ html{
     display: flex;
     &List{
       margin: 5px;
-      padding: 15px 0;
+      padding: 10px 0;
       font-size: 15px;
       display: flex;
       text-decoration: none;

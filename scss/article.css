@@ -80,6 +80,10 @@ html {
   background-color: #5B5B5B;
 }
 
+.bread {
+  margin-left: 35px;
+}
+
 .breadUnit {
   font: 17.5px;
   margin: 0 0 5px 20px;
@@ -93,12 +97,12 @@ html {
   color: #FFFFFF;
 }
 
-.breadUnit_list:nth-child(2) {
+.breadUnit_list:nth-child(3) {
   color: #ccc7c7;
 }
 
 .breadUnit_listLink {
-  padding: 5px;
+  padding: 0 0 0 15px;
 }
 
 .breadUnit_listLink:hover {
@@ -106,13 +110,15 @@ html {
 }
 
 .articleUnit {
-  height: 500px;
-  width: 500px;
+  width: 860px;
+  margin: 0 75px;
   padding-right: 20px;
-  background-color: #8E8E8E;
+  background-color: #978f8f;
 }
 
 .articleUnit_day {
+  padding: 10px 5px;
+  font-weight: 100;
   text-align: left;
 }
 
@@ -123,34 +129,49 @@ html {
 }
 
 .articleUnit_wrapList {
-  height: 10px;
   margin: 5px;
+  padding: 10px 0;
   font-size: 15px;
-  padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-  border: 1px red solid;
-  background-color: azure;
+  background-color: #C4C4C4;
+}
+
+.articleUnit_wrapList-link {
+  padding: 0 20px;
+}
+
+.articleUnit_image {
+  width: 200px;
+  background-color: paleturquoise;
 }
 
 .articleUnit_title {
-  font-size: 17px;
+  padding: 10px 10px;
+  font-size: 20px;
   font-weight: bold;
+  text-align: left;
   text-decoration: none;
   color: #FFFFFF;
 }
 
 .articleUnit_content {
-  font-size: 14px;
-  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: left;
   text-decoration: none;
+  overflow: hidden;
   color: #FFFFFF;
 }
 
+.articleUnit_content:last-child {
+  line-height: 80px;
+}
+
 .mainWrapper {
-  padding-right: 20px;
+  padding-top: 100px;
 }
 
 .secondaryArea {
@@ -174,12 +195,12 @@ html {
           justify-content: space-evenly;
 }
 
-.categoryTitle_Main {
+.categoryTitle_main {
   margin-top: 5.5px;
   color: white;
 }
 
-.categoryTitle_Button {
+.categoryTitle_button {
   margin-top: 1.3px;
   border: none;
   cursor: pointer;
@@ -221,11 +242,16 @@ html {
 }
 
 .columnArea_Toc {
-  padding: 10px 0px 15px;
+  padding: 10px 0px 5px;
 }
 
 .columnArea_wrap {
   width: auto;
+  margin: 20px 0;
+}
+
+.columnArea_wrap:nth-child(2) {
+  margin: 20px 0 0;
 }
 
 .columnArea_wrapList {
@@ -247,8 +273,8 @@ html {
 }
 
 .columnArea_wrapList-image {
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: 200px;
 }
 
 .columnArea_wrapList-button {
