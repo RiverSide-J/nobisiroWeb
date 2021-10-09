@@ -129,6 +129,14 @@ html{
   color: white;
 }
 
+.hamburger_toggle{
+  display: none;
+}
+
+.hamburger{
+  display: none;
+}
+
 .bread{
   &Unit{
     font: 17.5px;
@@ -251,6 +259,7 @@ html{
   width: 62%;
   display: flex;
   list-style: none;
+  align-items: center;
   justify-content: center;
   gap: 10px;
   &List{
@@ -353,23 +362,9 @@ html{
     display: none;
   }
 
-  .moreButtonsp{
-    width: 220px;
-    height: 50px;
-    border-radius: 25px;
-    margin: 40px auto 20px auto;
-    padding-bottom: 1px;
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: #EBEBEB;
-    order: 3;
-    &_Cursorsp{
-      text-decoration: none;
-      cursor: pointer;
-    }
+  .bread{
+    margin-top: 50px;
   }
-
   // ヘッダー
   .header{ 
     max-width: 85%;
@@ -409,79 +404,115 @@ html{
     color: white;
   }
 
-    // ハンバーガーメニュー[ボタン]
-    .hamburger_toggle{
-      width: 50px;
-      height: 30px;
-      display: block;
-      position: fixed;
-      right: 35px;
-      top: 70px;
-      z-index: 1000;
-    }
-    .hamburger_toggle i {
-      display: block;
-      width: 100%;
-      height: 2px;
-      position: absolute;
-      background-color: #333;
-      transition: transform .5s, opacity .5s;
-    }
-    // ハンバーガーメニューの[i]の設定
-    .hamburger_toggle i:nth-child(1) {
-      top: 0;
-    }
-    .hamburger_toggle i:nth-child(2) {
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    .hamburger_toggle i:nth-child(3) {
-      bottom: 0;
-    }
-    // クリック後のアニメーション
-    .hamburger_toggle.show i:nth-child(1) {
-      transform: translateY(14.5px) rotate(-45deg);
-    }
-    .hamburger_toggle.show i:nth-child(2) {
-      opacity: 0;
-    }
-    .hamburger_toggle.show i:nth-child(3) {
-      transform: translateY(-14.5px) rotate(45deg);
-    }
-  
-    // ハンバーガーメニュー[本体]
-    .hamburger{
-      display: block;
-      position: fixed;
-      top: 3rem;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 1rem;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity .5s, visibility .5s;
-      background-color: rgba(101, 116, 222, 0.8);
-      &Unit{
-        margin-top: 90px;
-        text-align: center;
-        &_link{
-          margin-top: 20px;
-        }
+  // ハンバーガーメニュー[ボタン]
+  .hamburger_toggle{
+    width: 50px;
+    height: 30px;
+    display: block;
+    position: fixed;
+    right: 35px;
+    top: 70px;
+    z-index: 1000;
+  }
+  .hamburger_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #333;
+    transition: transform .5s, opacity .5s;
+  }
+  // ハンバーガーメニューの[i]の設定
+  .hamburger_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .hamburger_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hamburger_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+  // クリック後のアニメーション
+  .hamburger_toggle.show i:nth-child(1) {
+    transform: translateY(14.5px) rotate(-45deg);
+  }
+  .hamburger_toggle.show i:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger_toggle.show i:nth-child(3) {
+    transform: translateY(-14.5px) rotate(45deg);
+  }
+
+  // ハンバーガーメニュー[本体]
+  .hamburger{
+    display: block;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    background-color: rgba(101, 116, 222, 0.8);
+    &Unit{
+      margin-top: 90px;
+      text-align: center;
+      &_link{
+        margin-top: 20px;
       }
     }
-    // ハンバーガーメニュー[本体]：アニメーション
-    .hamburger.show {
-      opacity: 1;
-      visibility: visible;
-    }
-  
-    .headerMenu{
-      display: none;
-    }
+  }
 
-    .hamburger_toggle i{
-      background: linear-gradient(90deg,#fc3e31 0%,#f2dc26 100%);
+  // ハンバーガーメニュー[本体]：アニメーション
+  .hamburger.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .headerMenu{
+    display: none;
+  }
+
+  .hamburger_toggle i{
+    background: linear-gradient(90deg,#fc3e31 0%,#f2dc26 100%);
+  }
+
+ .newsContainer{
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .newsUnit{
+   margin-top: 30px;
+   order: 2;
+ }
+
+  // フッター
+  .footer{
+    padding: 20px 20px 10px;
+    &Group{
+      flex-wrap: wrap;
+      &_Main{
+        margin: 0.1em 1em 0.9em 0;
+        font-size: 30px;
+      }
+      &_Menu{
+        gap: 20px
+
+      }
+    }
+    &Secondary{
+      padding: 15px 5px 0;
+      font-size: 15px;
     }
   }
+  // ページネーション
+  .example{
+    margin: 0 auto;
+  }
+}

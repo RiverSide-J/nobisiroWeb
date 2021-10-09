@@ -131,6 +131,14 @@ html {
   color: white;
 }
 
+.hamburger_toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
 .breadUnit {
   font: 17.5px;
   margin: 0 0 5px 20px;
@@ -271,6 +279,9 @@ html {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -378,23 +389,8 @@ html {
   .moreButton {
     display: none;
   }
-  .moreButtonsp {
-    width: 220px;
-    height: 50px;
-    border-radius: 25px;
-    margin: 40px auto 20px auto;
-    padding-bottom: 1px;
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: #EBEBEB;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .moreButtonsp_Cursorsp {
-    text-decoration: none;
-    cursor: pointer;
+  .bread {
+    margin-top: 50px;
   }
   .header {
     max-width: 85%;
@@ -507,6 +503,44 @@ html {
   .hamburger_toggle i {
     background: -webkit-gradient(linear, left top, right top, from(#fc3e31), to(#f2dc26));
     background: linear-gradient(90deg, #fc3e31 0%, #f2dc26 100%);
+  }
+  .newsContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsUnit {
+    margin-top: 30px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer {
+    padding: 20px 20px 10px;
+  }
+  .footerGroup {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footerGroup_Main {
+    margin: 0.1em 1em 0.9em 0;
+    font-size: 30px;
+  }
+  .footerGroup_Menu {
+    gap: 20px;
+  }
+  .footerSecondary {
+    padding: 15px 5px 0;
+    font-size: 15px;
+  }
+  .example {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=newsall.css.map */
