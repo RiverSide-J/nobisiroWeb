@@ -11,6 +11,13 @@ html{
   height: 100%;
 }
 
+.hamburger_toggle{
+  display: none;
+}
+
+.hamburger{
+  display: none;
+}
 
 // ヘッダー
 .header{ 
@@ -65,6 +72,83 @@ html{
   font-weight: bold;
   color: white;
 }
+
+  // ハンバーガーメニュー[ボタン]
+  .hamburger_toggle{
+    width: 50px;
+    height: 30px;
+    display: block;
+    position: fixed;
+    right: 35px;
+    top: 70px;
+    z-index: 1000;
+  }
+  .hamburger_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #333;
+    transition: transform .5s, opacity .5s;
+  }
+  // ハンバーガーメニューの[i]の設定
+  .hamburger_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .hamburger_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .hamburger_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+  // クリック後のアニメーション
+  .hamburger_toggle.show i:nth-child(1) {
+    transform: translateY(14.5px) rotate(-45deg);
+  }
+  .hamburger_toggle.show i:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger_toggle.show i:nth-child(3) {
+    transform: translateY(-14.5px) rotate(45deg);
+  }
+
+  // ハンバーガーメニュー[本体]
+  .hamburger{
+    display: block;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    background-color: rgba(101, 116, 222, 0.8);
+    &Unit{
+      margin-top: 90px;
+      text-align: center;
+      &_link{
+        margin-top: 20px;
+      }
+    }
+  }
+  // ハンバーガーメニュー[本体]：アニメーション
+  .hamburger.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .headerMenu{
+    display: none;
+  }
+
+  .hamburger_toggle i{
+    background: linear-gradient(90deg,#fc3e31 0%,#f2dc26 100%);
+  }
+
 
 .main{
   width: auto;
@@ -537,5 +621,59 @@ html{
 
     .hamburger_toggle i{
       background: linear-gradient(90deg,#fc3e31 0%,#f2dc26 100%);
+    }
+
+      // フッター
+  .footer{
+    padding: 20px 20px 10px;
+    &Group{
+      flex-wrap: wrap;
+      &_Main{
+        margin: 0.1em 1em 0.9em 0;
+        font-size: 30px;
+      }
+      &_Menu{
+        gap: 20px
+
+      }
+    }
+    &Secondary{
+      padding: 15px 5px 0;
+      font-size: 15px;
+    }
+  }
+    .articleUnit{
+      width: auto;
+      margin: 0 20px 20px;
+    }
+    .articleContainer{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .bread{
+      margin-left: 5px;
+    }
+
+    .breadUnit{
+      margin: 40px 0 0;
+    }
+
+    .secondaryContainer{
+      margin: 0 auto 20px;
+    }
+    .columnArea{
+      width: auto;
+      &_Toc{
+        padding: 10px 0px 5px;
+        &:nth-child(3){
+          margin:20px 0 0;
+          display: none;
+        }
+        &-image{
+          width: 200px;
+          height: 200px;
+        }
+      }
     }
   }
