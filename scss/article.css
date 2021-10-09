@@ -700,8 +700,7 @@ html {
   .columnArea_Toc {
     padding: 10px 0px 5px;
   }
-  .columnArea_Toc:nth-child(3) {
-    margin: 20px 0 0;
+  .columnArea_Toc_wrapList:last-child {
     display: none;
   }
   .columnArea_Toc-image {
