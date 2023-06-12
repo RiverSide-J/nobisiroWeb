@@ -371,9 +371,6 @@ html{
     display: none;
   }
 
-  .bread{
-    margin-top: 20px;
-  }
   // ヘッダー
   .header{ 
     max-width: 85%;
@@ -537,6 +534,18 @@ html{
   .blogallContainer{
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .example{
+    bottom: 150px;
+    position: relative;
+    z-index: 5;
+  }
+ 
+  .category{
+    top: 150px;
+    position: relative;
+    z-index: 10;
   }
 
 }

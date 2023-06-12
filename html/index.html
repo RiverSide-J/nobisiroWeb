@@ -10,6 +10,7 @@
     <!-- css scss -->
     <link rel="stylesheet" href="../scss/styles.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../scss/clock.css">
     <!-- jquery -->
     <script src="../jquery/jquery-3.6.0.min.js"></script>
     
@@ -124,11 +125,30 @@
       </nav>
     </header>
 
-    <main  class="main">
+    <main class="main">
       <div class="mainFeature">
-        
+        <div class="mainFeature_wave" id="wave"></div>
         <!-- タイトル下の文章 -->
         <!-- ボタンを押すとニュースに移動 -->
+        <!--  -->
+        <!-- 時間帯表現 -->
+        <!-- 雲 -->
+        <div class="">
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+        </div>
+        <!-- 時計 -->
+        <!-- <div class="timecontainer">
+          <div class="clock">
+            <p class="clock-date"></p>
+            <p class="clock-time"></p>
+          </div>
+        </div> -->
         <button class="mainFeature_Button">
           <a class="mainFeature_Buttonintro" href="#newsArea">
             scroll
@@ -136,6 +156,7 @@
             ↓
           </a>
         </button>
+
       </div>
     </main>
 
@@ -280,7 +301,7 @@
       <div class="footerGroup">
         <!-- フッター「タイトル」 -->
         <h4 class="footerGroup_Main">
-          <a href="#">
+          <a class="pulsate" href="#">
             SITE_TITLE
           </a>
         </h4>
@@ -306,7 +327,8 @@
         ©️ノビシロテック sample 2021
       </h3>
     </footer>
-
+    <!-- 時計関連 -->
+    <!-- <script src="../jquery/clock.js"></script> -->
     <!-- swiper関係 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
 

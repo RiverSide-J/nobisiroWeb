@@ -393,9 +393,6 @@ html {
   .moreButton {
     display: none;
   }
-  .bread {
-    margin-top: 20px;
-  }
   .header {
     max-width: 85%;
     -webkit-box-orient: vertical;
@@ -560,6 +557,16 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .example {
+    bottom: 150px;
+    position: relative;
+    z-index: 5;
+  }
+  .category {
+    top: 150px;
+    position: relative;
+    z-index: 10;
   }
 }
 /*# sourceMappingURL=blogall.css.map */

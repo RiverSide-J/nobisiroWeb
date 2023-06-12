@@ -593,8 +593,26 @@ html {
   .articleUnit {
     width: auto;
   }
+  .articleUnit_wrapList {
+    padding: 10px 0;
+  }
+  .articleUnit_title {
+    font-size: 20px;
+  }
+  .articleUnit_content {
+    font-size: 16px;
+  }
+  .articleUnit_content:last-child {
+    line-height: 25px;
+  }
   .categoryGroup {
-    margin: 0 auto 20px;
+    margin: 30px auto 40px;
+  }
+  .newsUnit {
+    display: none;
+  }
+  #secondaryBottom {
+    display: none;
   }
 }
 /*# sourceMappingURL=newstitle.css.map */

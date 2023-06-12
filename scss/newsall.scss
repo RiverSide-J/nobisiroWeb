@@ -481,6 +481,10 @@ html{
     background: linear-gradient(90deg,#fc3e31 0%,#f2dc26 100%);
   }
 
+  .news{
+    padding: 100px 0;
+  }
+
  .newsContainer{
    flex-wrap: wrap;
    flex-direction: column;
@@ -488,9 +492,28 @@ html{
  }
 
  .newsUnit{
-   margin-top: 30px;
-   order: 2;
+   width: auto;
  }
+
+ .example{
+   bottom: 150px;
+   position: relative;
+   z-index: 5;
+   margin: auto;
+ }
+
+ .category{
+   width: auto;
+   margin: 0 20px;
+   top: 150px;
+   position: relative;
+   z-index: 10;
+ }
+
+ .sidebutton{
+    font-size: 15px;
+    width: 70px;
+  }
 
   // フッター
   .footer{
@@ -513,6 +536,8 @@ html{
   }
   // ページネーション
   .example{
-    margin: 0 auto;
+    bottom: 150px;
+    position: relative;
+    z-index: 5;
   }
 }

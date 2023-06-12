@@ -48,24 +48,58 @@ html{
     }
 }
 
+
 // メイン
 .main{
   background-color: #000000;
   &Feature{
     width: 100%;
     height: 100vh;
+    &_wave{
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      --waveSize: 6.5em;
+      --waveColor1: blue;
+      --waveColor2: dodgerblue;
+      background: 
+        radial-gradient(circle at 50% calc(100% - var(--waveSize)), 
+          transparent 50%, var(--waveColor1) 50%) left 102% / var(--waveSize) var(--waveSize) repeat-x,
+        radial-gradient(circle at 50% 10%, 
+          transparent 50%, var(--waveColor2) 50%) center bottom / var(--waveSize) var(--waveSize) repeat-x,
+        }
+        background:linear-gradient(45deg, lightblue,dodgerblue,midnightblue);/*グラデーションを定義*/
+        background-size: 200% 200%;/*サイズを大きくひきのばす*/
+        animation: bggradient 30s ease infinite;
+    ;
+    @keyframes bggradient{
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
     &_Button{
       left: 0;
       right: 0;
-      bottom: 2.5ex;
+      bottom: 1.7ex;
       margin: 0 auto;
       padding: 0;
       position: absolute;
       font-size: 30px;
       color: white;
-      opacity: 0.6;
+      opacity: 0.9;
       background: transparent;
       display: block;
+
+      background: saddlebrown;
+      border: 2px ridge brown;
+      border-top-width: 10px;
+      border-bottom-width: 10px;
+      border-radius: 15px;
       // 上下移動アニメーション
       animation-name: UpUpDownDown;
       animation-timing-function: ease-in-out;
@@ -77,6 +111,91 @@ html{
         color: aliceblue;
         text-decoration: none;
       }
+    }
+  }
+  // 雲
+  .bubbles {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bubble {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: bubble 10s ease infinite;
+    background: whitesmoke;
+  }
+  
+  .bubble:nth-child(1) {
+    width: 87px;
+    height: 45px;
+    left: 0;
+    top: 19%;
+    animation-duration: 5s;
+  }
+  
+  .bubble:nth-child(2) {
+    width: 200px;
+    height: 70px;
+    left: 10%;
+    top: 11%;
+    animation-delay: 1s;
+  }
+  
+  .bubble:nth-child(3) {
+    width: 130px;
+    height: 50px;
+    left: 25%;
+    top: 7%;
+    animation-duration: 3s;
+  }
+  
+  .bubble:nth-child(4) {
+    width: 180px;
+    height: 60px;
+    right: 23%;
+    top: 5%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+  }
+  
+  .bubble:nth-child(5) {
+    width: 100px;
+    height: 40px;
+    right: 11%;
+    top: 15%;
+    animation-duration: 3.5s;
+  }
+  
+  .bubble:nth-child(6) {
+    width: 80px;
+    height: 40px;
+    right: 23%;
+    top: 20%;
+    animation-duration: 5s;
+  }
+  
+  .bubble:nth-child(7) {
+    width: 160px;
+    height: 50px;
+    right: 45%;
+    top: 15%;
+    animation-duration: 4s;
+  }
+  
+  @keyframes bubble {
+    0% {
+      bottom: -100px;
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      bottom: 1000px;
     }
   }
 }
@@ -205,11 +324,12 @@ html{
       margin: 0.1em 1em 0.9em 0;
       font-size: 60px;
       color: rgba(255, 255, 255, 0.3);
-      // 色変化アニメーション
-      transition: color .2s;
       &:hover{
-        color: gold;
+        text-shadow: red;
+        color: sandybrown;
       }
+  
+
     }
     &_Menu{
       margin: 27px 0 0 0;
@@ -490,27 +610,10 @@ display: none;
       width: 100%;
       height: 100vh;
       &_Button{
-        left: 0;
-        right: 0;
-        bottom: 2.5ex;
-        margin: 0 auto;
-        padding: 0;
-        position: absolute;
-        font-size: 30px;
-        color: white;
-        opacity: 0.6;
-        background: transparent;
-        display: block;
-        // 上下移動アニメーション
-        animation-name: UpUpDownDown;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-duration: 1.5s;
+        bottom: 1.5ex;
+        background:saddlebrown;
         &intro{
-          display: block;
-          color: aliceblue;
-          text-decoration: none;
+
         }
       }
     }

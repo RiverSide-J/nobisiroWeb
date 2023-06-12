@@ -465,15 +465,7 @@ html{
 
 // iPhone10〜からのスマホ対応
 @media screen and (max-width: 375px){  
-  .hamburgerTop{
-    font-size: 25px;
-  }
-  .hamburgerBottom{
-    font-size: 30px;
-    line-height: 1.3;  
-  }
 
-  
   // （primary/secondary)
   .titlePrimary{
     font-size: 45px;
@@ -486,9 +478,41 @@ html{
     font-size: 17px;
   }
 
+  #categoryBottom{
+    display: none;
+  }
+
+  .category{
+    width: auto;
+  }
+
   // ボタン関係
   .moreButton{
     display: none;
+  }
+
+  .mainWrapper{
+    margin: 0 25px;
+  }
+
+  .bread{
+    margin:0;
+  }
+
+    // パンくずリスト[bread]// 
+  .bread{
+    margin-left: 0;
+    &Unit{
+      &_list{
+        &:nth-child(3){
+        }
+        &Link{
+          padding: 0;
+          &:hover{
+          }
+        }
+      }
+    }
   }
 
   .moreButtonsp{
@@ -507,6 +531,7 @@ html{
       cursor: pointer;
     }
   }
+
 
   // ヘッダー
   .header{ 
@@ -528,6 +553,40 @@ html{
             text-align: center;
           }
       }
+  }
+
+  // 記事本文と全体 [articleUnit]
+  .articleUnit{
+    width: auto;
+    margin: 0 0 20px;
+    &_day{
+
+    }
+    &_wrap{
+
+      &List{
+
+        &-link{
+        }
+      }
+    }
+    &_image{
+
+    }
+    &_title{
+
+    }
+    &_content{
+      font-size: 18px;
+      &:last-child{
+        line-height: 50px;
+      }
+    }
+  }
+
+  .articleContainer{
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .headerPortfolid{
@@ -623,8 +682,16 @@ html{
       background: linear-gradient(90deg,#fc3e31 0%,#f2dc26 100%);
     }
 
-      // フッター
-  .footer{
+    .hamburgerTop{
+      font-size: 25px;
+    }
+    .hamburgerBottom{
+      font-size: 30px;
+      line-height: 1.3;  
+    }
+
+    // フッター
+   .footer{
     padding: 20px 20px 10px;
     &Group{
       flex-wrap: wrap;
@@ -642,38 +709,46 @@ html{
       font-size: 15px;
     }
   }
-    .articleUnit{
-      width: auto;
-      margin: 0 20px 20px;
-    }
-    .articleContainer{
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-
-    .bread{
-      margin-left: 5px;
-    }
 
     .breadUnit{
       margin: 40px 0 0;
     }
 
     .secondaryContainer{
-      margin: 0 auto 20px;
+      margin: 0 auto;
     }
+
     .columnArea{
       width: auto;
       &_Toc{
+        margin: 40px 0;
+      }
+      &_wrap{
         padding: 10px 0px 5px;
-        &_wrapList{
-          &:last-child{
-            display: none;
-          }
+
+        &:nth-child(2){
+          margin:20px 0 0;
         }
-        &-image{
-          width: 200px;
-          height: 200px;
+        &List{
+          &:not(:first-child){
+            margin-top: 20px;
+          }
+          &-btn{
+            width: 140px;
+            height: 35px;
+           &Src{
+            font-size: 15px;
+           } 
+          }
+          &-image{
+            width: 200px;
+            height: 200px;
+          }
+          &-button{
+            &Src{
+              font-size: 25px;
+            }
+          }
         }
       }
     }

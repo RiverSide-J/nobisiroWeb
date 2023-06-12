@@ -558,10 +558,44 @@ html{
   .mainWrapper{
     margin: 0 20px 20px;
   }
+  // お知らせの本文
   .articleUnit{
     width: auto;
+
+    &_day{
+    }
+    &_wrap{
+      &List{
+        padding: 10px 0;
+
+        &-link{
+        }
+      }
+    }
+    &_image{
+  
+    }
+    &_title{
+      font-size: 20px;
+  
+    }
+    &_content{
+      font-size: 16px;
+
+      &:last-child{
+        line-height: 25px;
+      }
+    }
   }
+
   .categoryGroup{
-    margin: 0 auto 20px;
+    margin: 30px auto 40px;
+  }
+
+  .newsUnit{
+    display: none;
+  }
+  #secondaryBottom{
+    display: none;
   }
 }
